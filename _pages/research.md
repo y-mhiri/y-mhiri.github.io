@@ -5,5 +5,8 @@ permalink: /research/
 author_profile: true
 ---
 
+## My Phd Thesis
 
-This the research page
+
+## Research activities
+
