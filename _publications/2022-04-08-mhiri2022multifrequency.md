@@ -1,10 +1,10 @@
 ---
 title: "Multifrequency Array Calibration in Presence of Radio Frequency Interferences"
 collection: publications
-permalink: /publication/2015-10-01-paper-title-number-3
+permalink: /publication/mhiri2022multifrequency
 excerpt: 
 date: 2022-04-08
-venue: 'Journal 1'
+venue: ''
 paperurl: 'https://arxiv.org/abs/2202.07297'
 citation: 'Y. Mhiri et al. &quot;Multifrequency Array Calibration in Presence of Radio Frequency Interferences.&quot; <i>Signal Processing Elsevier (in revision)</i>.'
 ---
@@ -20,7 +20,6 @@ frequency channels thanks to a low-rank structured noise. We then achieve maximu
 the calibration parameters with a Space Alternating Generalized Expectation-Maximization (SAGE) algorithm for which we derive originally two sets of complete data allowing 
 closed-form expressions for the updates. Numerical simulations show a significant gain in performance for RFI corrupted 
 data in comparison with some more classical methods.
-
 
 [Download paper here](https://arxiv.org/abs/2202.07297)
 
