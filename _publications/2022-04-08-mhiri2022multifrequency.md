@@ -2,7 +2,7 @@
 title: "Multifrequency Array Calibration in Presence of Radio Frequency Interferences"
 collection: publications
 permalink: /publication/mhiri2022multifrequency
-excerpt: 
+excerpt: ''
 date: 2022-04-08
 venue: ''
 paperurl: 'https://arxiv.org/abs/2202.07297'
