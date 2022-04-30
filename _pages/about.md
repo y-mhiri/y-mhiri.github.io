@@ -10,9 +10,10 @@ redirect_from:
 
 ## Bio 
 I am a Phd Student in statistical signal processing applied to radioastronomy, supervised by 
-Pascal Larzabal, Mohammed Nabil EL Korso and Arnaud Breloy within the SATIE laboratory at Paris-Saclay University. 
+[Pascal Larzabal](http://satie.ens-paris-saclay.fr/larzabal-pascal-212499.kjsp), [Mohammed Nabil EL Korso](https://sites.google.com/site/nabkorso/) and [Arnaud Breloy](https://abreloy.github.io/)
+within the signal processing group (MOSS) of the SATIE laboratory at Paris-Saclay University. 
 
-Before that, i was a research engineer at Phasics where i helped conceive and develop algorithmic solutions for wavefront sensor analysis.
+Before that, i was a research engineer at [Phasics](https://www.phasics.com/en/) where i helped conceive and develop algorithmic solutions for wavefront sensor analysis.
 
 ## Research
 My current research interests lie in robust signal processing, statistical learning, structured covariance matrix estimation, radio-interferometry and sensor array processing.
@@ -20,7 +21,7 @@ My current research interests lie in robust signal processing, statistical learn
 ## News
 **2022/02** - New preprint on multifrequency array calibration in presence of radiofrequency interference [download paper here](https://arxiv.org/abs/2202.07297).
 
-**2021/08** - Accepter paper at EUSIPCO 2021 [download paper here](https://hal.archives-ouvertes.fr/hal-03156738/document).
+**2021/08** - Accepted paper at EUSIPCO 2021 [download paper here](https://hal.archives-ouvertes.fr/hal-03156738/document).
 
 
 <!-- This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
