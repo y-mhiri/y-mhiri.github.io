@@ -3,8 +3,8 @@ title: "Expectation-Maximization Based Direction of Arrival Estimation Under a M
 collection: publications
 permalink: /publication/2009-10-01-paper-title-number-1
 excerpt: ''
-date: 2021-08-28
-venue: 'Conference 1'
+# date: 2021-08-28
+# venue: 'Conference 1'
 paperurl: 'https://hal.archives-ouvertes.fr/hal-03156738/document'
 citation: 'Y Mhiri et al. (2009). &quot;Expectation-Maximization Based Direction of Arrival Estimation Under a Mixture of Noise.&quot; <i>2021 29th European Signal Processing Conference (EUSIPCO).</i>. 1(1). IEEE. 2021 pp 1890-1893' 
 ---
