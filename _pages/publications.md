@@ -17,8 +17,7 @@ author_profile: true
 
 
 ## Journal Papers
-Multifrequency Array Calibration in Presence of Radio Frequency Interferences
-
+Multifrequency Array Calibration in Presence of Radio Frequency Interferences \
 **Yassine Mhiri**, Pascal Larzabal, Mohammed-Nabil El Korso and Arnaud Breloy
 
 *Signal Processing Elsevier*. vol . n . pp. 2022
