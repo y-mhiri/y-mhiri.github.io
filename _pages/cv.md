@@ -7,19 +7,18 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
 
 Education
 ======
 
-* M.S. in Electronics and signal processing, ENSEEIHT, Toulouse, France 2018
-* Ph.D in Statistical signal processing applied to radioastronomy, Université Paris-Saclay, 2023 (expected)
+* M.S. in Electronics and signal processing, *ENSEEIHT*, Toulouse, France 2018
+* Ph.D in Statistical signal processing applied to radioastronomy, *Université Paris-Saclay*, 2023 (expected)
 
-Work experience
+Work experiences
 ======
-* March 2019 - Sept 2020: Research engineer at Phasics
-* March 2018 - Sept 2018: Research internship at IRIT
-* June 2017 - Sept 2017: Research internship 
+* March 2019 - Sept 2020: Research engineer at *Phasics*
+* March 2018 - Sept 2018: Research internship at *IRIT/CNRS*
+* June 2017 - Sept 2017: Research internship at *AAU Aalborg Copenaguen*
 
 <!-- Teaching experience
 ======
@@ -28,14 +27,14 @@ Work experience
  
 Skills
 ======
-* Python, C++,  
-* Latex, Office, Html
+*Programming Langages*: Python, C/C++, bash, html/css \
+*Documents* : Latex, Office Suite
 
-Publications
+<!-- Publications
 ======
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
   
 <!-- Talks
 ======
@@ -43,12 +42,12 @@ Publications
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul> -->
   
-Teaching
+<!-- Teaching
 ======
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+   -->
 <!-- Service and leadership
 ======
 * Currently signed in to 43 different slack teams -->
