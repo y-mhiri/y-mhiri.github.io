@@ -57,7 +57,7 @@ small, .small {
   font-size: $type-size-6;
 }
 
-p {
+p > em{
   margin-bottom: 1.3em;
   color:#cb4b16;
 }
