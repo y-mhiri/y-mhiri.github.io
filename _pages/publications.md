@@ -17,14 +17,16 @@ author_profile: true
 
 
 ## Journal Papers
-Multifrequency Array Calibration in Presence of Radio Frequency Interferences \
-**Yassine Mhiri**, Pascal Larzabal, Mohammed-Nabil El Korso and Arnaud Breloy \
-*Signal Processing Elsevier*. vol . n . pp. 2022
-
+1. Multifrequency Array Calibration in Presence of Radio Frequency Interferences \
+  **Yassine Mhiri**, Pascal Larzabal, Mohammed-Nabil El Korso and Arnaud Breloy \
+  *Signal Processing Elsevier*. vol . n . pp. 2022
+  (https://www.sciencedirect.com/science/article/pii/S0165168422001530)[link]
+  
 ## International conference Papers
-Expectation-Maximization Based Direction of Arrival Estimation Under a Mixture of Noise \
-**Yassine Mhiri**, Pascal Larzabal, Mohammed-Nabil El Korso, Arnaud Breloy and Lucien Bacharach \
-*29th European Signal Processing Conference (EUSIPCO)*. IEEE. pp. 1890–1893. 2021
+1. Expectation-Maximization Based Direction of Arrival Estimation Under a Mixture of Noise \
+  **Yassine Mhiri**, Pascal Larzabal, Mohammed-Nabil El Korso, Arnaud Breloy and Lucien Bacharach \
+  *29th European Signal Processing Conference (EUSIPCO)*. IEEE. pp. 1890–1893. 2021
+  [link](https://hal.archives-ouvertes.fr/hal-03156738/document)
 
 ## National conference Papers
 Algorithme SAGE pour la calibration robuste de radio-interféromètres en présence d’interférences \
