@@ -11,14 +11,18 @@ redirect_from:
 Education
 ======
 
-* M.S. in Electronics and signal processing, *ENSEEIHT*, Toulouse, France 2018
-* Ph.D in Statistical signal processing applied to radioastronomy, *Université Paris-Saclay*, 2023 (expected)
+* M.S. in Electronics and signal processing, **ENSEEIHT**, Toulouse, France 2018
+* Ph.D in Statistical signal processing applied to radioastronomy, **Université Paris-Saclay**, 2023 (expected)
 
 Work experiences
 ======
-* March 2019 - Sept 2020: Research engineer at *Phasics*
-* March 2018 - Sept 2018: Research internship at *IRIT/CNRS*
-* June 2017 - Sept 2017: Research internship at *AAU Aalborg Copenaguen*
+* *March 2019 - Sept 2020*: Research engineer at **Phasics**
+Responsable of the conception and the development of signal processing algorithm applied to interferometric data.
+* *March 2018 - Sept 2018*: Research internship at **IRIT/CNRS**
+Conception of a neural architecture that mimic the Short Time Fourier Transform (STFT) and its inverse for applications
+to source separation and phase estimation.
+* *June 2017 - Sept 2017*: Research internship at **AAU Aalborg Copenaguen**
+Conception of a Generative Adversarial Network (GAN) for percussion generation.
 
 Teaching experience
 ======
