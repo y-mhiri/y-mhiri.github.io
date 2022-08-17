@@ -13,7 +13,7 @@ I am a Phd Student in statistical signal processing applied to radioastronomy, s
 [Pascal Larzabal](http://satie.ens-paris-saclay.fr/larzabal-pascal-212499.kjsp), [Mohammed Nabil EL Korso](https://sites.google.com/site/nabkorso/) and [Arnaud Breloy](https://abreloy.github.io/)
 within the signal processing group (MOSS) of the SATIE laboratory at Paris-Saclay University. 
 
-Before that, i was a research engineer at [Phasics](https://www.phasics.com/en/) where i helped conceive and develop algorithmic solutions for wavefront sensor analysis.
+Before that, I was a research engineer at [Phasics](https://www.phasics.com/en/) where i helped conceive and develop algorithmic solutions for wavefront sensor analysis.
 
 ## Research
 My current research interests lie in robust signal processing, statistical learning, structured covariance matrix estimation, interferometry and sensor array processing.
