@@ -16,7 +16,7 @@ within the signal processing group (MOSS) of the SATIE laboratory at Paris-Sacla
 Before that, i was a research engineer at [Phasics](https://www.phasics.com/en/) where i helped conceive and develop algorithmic solutions for wavefront sensor analysis.
 
 ## Research
-My current research interests lie in robust signal processing, statistical learning, structured covariance matrix estimation, radio-interferometry and sensor array processing.
+My current research interests lie in robust signal processing, statistical learning, structured covariance matrix estimation, interferometry and sensor array processing.
 
 ## News
 **2022/05** - Accepted paper for publication in *Elsevier Signal Processing* [download paper here](https://www.sciencedirect.com/science/article/pii/S0165168422001530)
