@@ -17,11 +17,14 @@ Education
 Work experiences
 ======
 * *March 2019 - Sept 2020*: Research engineer at **Phasics**
+
 Responsable of the conception and the development of signal processing algorithm applied to interferometric data.
 * *March 2018 - Sept 2018*: Research internship at **IRIT/CNRS**
+
 Conception of a neural architecture that mimic the Short Time Fourier Transform (STFT) and its inverse for applications
 to source separation and phase estimation.
 * *June 2017 - Sept 2017*: Research internship at **AAU Aalborg Copenaguen**
+
 Conception of a Generative Adversarial Network (GAN) for percussion generation.
 
 Teaching experience
