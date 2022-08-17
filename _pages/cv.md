@@ -20,9 +20,9 @@ Work experiences
 * March 2018 - Sept 2018: Research internship at *IRIT/CNRS*
 * June 2017 - Sept 2017: Research internship at *AAU Aalborg Copenaguen*
 
-<!-- Teaching experience
+Teaching experience
 ======
-* 2020 - 2022: Associate teacher for an Advanced C++ course at Polytech Paris-Saclay. -->
+* 2020 - 2022: Associate teacher for an Advanced C++ course at Polytech Paris-Saclay.
 
  
 Skills
