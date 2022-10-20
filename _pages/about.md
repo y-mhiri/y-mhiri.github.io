@@ -10,7 +10,7 @@ redirect_from:
 
 ## Bio 
 I am a Phd Student in statistical signal processing applied to radioastronomy, supervised by 
-[Pascal Larzabal](http://satie.ens-paris-saclay.fr/larzabal-pascal-212499.kjsp), [Mohammed Nabil EL Korso](https://sites.google.com/site/nabkorso/) and [Arnaud Breloy](https://abreloy.github.io/)
+[Pascal Larzabal](https://scholar.google.com/citations?hl=fr&user=aNwgKEEAAAAJ&view_op=list_works&sortby=pubdate), [Mohammed Nabil EL Korso](https://sites.google.com/site/nabkorso/) and [Arnaud Breloy](https://abreloy.github.io/)
 within the signal processing group (MOSS) of the SATIE laboratory at Paris-Saclay University. 
 
 Before that, I was a research engineer at [Phasics](https://www.phasics.com/en/) where i helped conceive and develop algorithmic solutions for wavefront sensor analysis.

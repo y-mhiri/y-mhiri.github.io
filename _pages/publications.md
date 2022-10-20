@@ -29,9 +29,9 @@ author_profile: true
   *29th European Signal Processing Conference (EUSIPCO)*. IEEE. pp. 1890–1893. 2021
   [link](https://hal.archives-ouvertes.fr/hal-03156738/document)
 
-2. A Robust EM Algorithm for Radio Interferometric Imaging in The Presence of Outliers.
-  **Yassine Mhiri**, Pascal Larzabal, Mohammed-Nabil El Korso, Arnaud Breloy,
-  SiPS22, Nov 2022, Rennes, France.
+2. A Robust EM Algorithm for Radio Interferometric Imaging in The Presence of Outliers.\
+  **Yassine Mhiri**, Pascal Larzabal, Mohammed-Nabil El Korso, Arnaud Breloy \
+  *SiPS22*, Nov 2022, Rennes, France.
   [link](https://hal.archives-ouvertes.fr/hal-03823295/document)
 
 ## National conference Papers
