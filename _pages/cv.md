@@ -12,7 +12,7 @@ Education
 ======
 
 * M.S. in Electronics and signal processing, **ENSEEIHT**, Toulouse, France 2018
-* Ph.D in Statistical signal processing applied to radioastronomy, **Université Paris-Saclay**, 2023 (expected)
+* Ph.D in Statistical signal processing applied to radioastronomy, **SATIE/Université Paris-Saclay**, 2023 (expected)
 
 Work experiences
 ======
