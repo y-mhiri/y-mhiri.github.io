@@ -18,11 +18,12 @@ Before that, I was a research engineer at [Phasics](https://www.phasics.com/en/)
 ## Research
 My current research interests lie in robust signal processing, statistical learning, structured covariance matrix estimation, interferometry and sensor array processing.
 
-## News
+
+<!-- ## News
 **2022/05** - Accepted paper for publication in *Elsevier Signal Processing* [download paper here](https://www.sciencedirect.com/science/article/pii/S0165168422001530)
 
 **2022/02** - New preprint on multifrequency array calibration in presence of radiofrequency interference [download paper here](https://arxiv.org/abs/2202.07297).
 
 **2021/08** - Accepted paper at *EUSIPCO 2021* [download paper here](https://hal.archives-ouvertes.fr/hal-03156738/document).
 
-
+ -->
