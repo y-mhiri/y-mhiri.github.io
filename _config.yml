@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Yassine Mhiri"
   avatar           : "drawnface.png"
-  bio              : "Phd Student in Statistical Signal Processing applied to radioastronomy"
+  bio              : "Phd Student in Statistical Signal Processing applied to radioastronomy, SATIE, ENS Paris Saclay"
   location         : "Paris, France"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
@@ -96,13 +96,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "y-mhiri"
+  github           : "https://github.com/y-mhiri"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "https://fr.linkedin.com/in/yassine-mhiri-701177109"
   orcid            : "http://orcid.org/0000-0002-8435-7976"
   pinterest        :
   soundcloud       :
