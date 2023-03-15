@@ -34,13 +34,15 @@ author_profile: true
   *SiPS22*, Nov 2022, Rennes, France.
   [link](https://hal.archives-ouvertes.fr/hal-03823295/document)
   
-3. Unrolled robust radio-interferometric imaging algorithm \
-**Yassine Mhiri**, Pascal Larzabal, Mohammed-Nabil El Korso, Arnaud Breloy \
-*31th European Signal Processing Conference (EUSIPCO)* (En soumission)
 
 
 ## National conference Papers
 1. Algorithme SAGE pour la calibration robuste de radio-interféromètres en présence d’interférences \
   **Yassine Mhiri**, Pascal Larzabal, Mohammed-Nabil El Korso and Arnaud Breloy \
   *GRETSI 2022*. [link](https://arxiv.org/pdf/2202.07297.pdf)
+  
+2. Imagerie radio-interférométrique robuste par dépliement neuronal \
+  **Yassine Mhiri**, Pascal Larzabal, Mohammed-Nabil El Korso, Arnaud Breloy \
+  *GRETSI 2023* (En soumission)
+
 
