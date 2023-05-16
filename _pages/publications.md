@@ -39,7 +39,7 @@ author_profile: true
 ## National conference Papers
 1. Algorithme SAGE pour la calibration robuste de radio-interféromètres en présence d’interférences \
   **Yassine Mhiri**, Pascal Larzabal, Mohammed-Nabil El Korso and Arnaud Breloy \
-  *GRETSI 2022*. [link](https://arxiv.org/pdf/2202.07297.pdf)
+  *GRETSI 2022*. [link](http://gretsi.fr/data/colloque/pdf/2022_mhiri920.pdf)
 
 2. Imagerie radio-interférométrique robuste par dépliement neuronal \
   **Yassine Mhiri**, Pascal Larzabal, Mohammed-Nabil El Korso, Arnaud Breloy \
