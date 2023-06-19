@@ -22,7 +22,11 @@ author_profile: true
   *Signal Processing Elsevier*. Volume 199, October 2022, article 108613
   [link](https://arxiv.org/pdf/2202.07297.pdf)
   <!-- [link](https://www.sciencedirect.com/science/article/pii/S0165168422001530) -->
-  
+
+2. Regularized maximum likelihood estimation for radio interferometric imaging in the presence of radiofrequency interefences \
+**Yassine Mhiri**, Pascal Larzabal, Mohammed-Nabil El Korso and Arnaud Breloy \
+*Signal Processing Elsevier (in review)*. 
+
 ## International conference Papers
 1. Expectation-Maximization Based Direction of Arrival Estimation Under a Mixture of Noise \
   **Yassine Mhiri**, Pascal Larzabal, Mohammed-Nabil El Korso, Arnaud Breloy and Lucien Bacharach \
@@ -43,4 +47,4 @@ author_profile: true
 
 2. Imagerie radio-interférométrique robuste par dépliement neuronal \
   **Yassine Mhiri**, Pascal Larzabal, Mohammed-Nabil El Korso, Arnaud Breloy \
-  *GRETSI 2023* (En soumission)
+  *GRETSI 2023*
