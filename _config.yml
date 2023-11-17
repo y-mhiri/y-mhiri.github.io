@@ -82,11 +82,12 @@ analytics:
 author:
   name             : "Yassine Mhiri"
   avatar           : "photo-id.jpg"
-  bio              : "Phd Student in Statistical Signal Processing applied to radioastronomy, SATIE, ENS Paris Saclay"
+  bio              : "Postdoctoral researcher in signal processing at Laboratoire MAP 5, Université Paris-Cité"
+  # bio              : "Phd Student in Statistical Signal Processing applied to radioastronomy, SATIE, ENS Paris Saclay"
   location         : "Paris, France"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "https://scholar.google.com/citations?user=k4HG5UEAAAAJ&hl=fr"
+  googlescholar    : #"https://scholar.google.com/citations?user=k4HG5UEAAAAJ&hl=fr"
   email            : "yassine.mhiri@outlook.fr"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
