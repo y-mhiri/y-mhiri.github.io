@@ -9,28 +9,27 @@ redirect_from:
 ---
 
 ## Bio 
-I am a Phd Student in statistical signal processing applied to radioastronomy, supervised by 
-[Pascal Larzabal](https://scholar.google.com/citations?hl=fr&user=aNwgKEEAAAAJ&view_op=list_works&sortby=pubdate), [Mohammed Nabil EL Korso](https://sites.google.com/site/nabkorso/) and [Arnaud Breloy](https://abreloy.github.io/)
-within the signal processing group (MOSS) of the SATIE laboratory at Paris-Saclay University. 
 
-Before that, I was a research engineer at [Phasics](https://www.phasics.com/en/) where i helped conceive and develop algorithmic solutions for wavefront sensor analysis.
+I am a postdoctoral researcher in the Image group at MAP 5 Laboratory in Université Paris Cité. Currently collaborating with Andrés Almansa, Rémy Abergel, and Lionel Moisan on hyperspectral image reconstruction. This work is part of the ANR project Fu-MultiSpoc in partnership with Mauro Dalla-Mura from the Gipsa-Lab, which aims to develop a high-resolution hyperspectral imager based on a Fabry Perot interferometer. My focus includes hyperspectral image denoising, image restoration, and plug-and-play approaches to inverse problems.
+
+During my Ph.D., supervised by [Pascal Larzabal](https://scholar.google.com/citations?hl=fr&user=aNwgKEEAAAAJ&view_op=list_works&sortby=pubdate), [Mohammed Nabil EL Korso](https://sites.google.com/site/nabkorso/), and [Arnaud Breloy](https://abreloy.github.io/) at the [SATIE](https://satie.ens-paris-saclay.fr/fr/methodes-et-outils-pour-les-signaux-et-systemes) laboratory at Ecole Normale Supérieure Paris-Saclay, I contributed to the field of radio-interferometry. My research focused on co-designing signal processing methodologies for the calibration and imaging of cutting-edge radio interferometers. This involved the development of robust statistical models using compound Gaussian distributions to handle radiofrequency interferences, and addressing optimization challenges in maximum likelihood estimation with algorithms such as Expectation-Maximization (EM) and SAGE.
+
+Before my Ph.D., I worked as a research engineer at [Phasics](https://www.phasics.com/en/), contributing to the conception and development of innovative algorithms tailored for the analysis of wavefront sensors
 
 ## Research
 
 ### Research interests
-My current research interests lie in robust signal processing, statistical learning, structured covariance matrix estimation, interferometry and sensor array processing.
+My current research interests span computational imaging, inverse problems, unrolled algorithms, plug-n-play neural network, robust signal processing, structured covariance matrix estimation, interferometry, and sensor array processing.
 
 ### My Phd
-During my Phd I proposed multiple statistical signal processing algorithms for radio-iterferometers or telescope arrays. 
 
-Notably I proposed a statistical modelization of radiofrequency inteferences derived from the physical 
-model of wave propagation from which I designed a multifrequency array calibration algorithm.
+My Ph.D. research, conducted at the SATIE laboratory , delves into the challenges presented by cutting-edge radio interferometers. My work emphasizes the co-conception of signal processing methodologies for calibration and imaging. This includes the development of robust statistical models using compound Gaussian distributions to model the presence of radiofrequency interferences. 
+Effectively addressing the intricate optimization challenges associated with maximum likelihood estimation for robust distributions involves the application of advanced algorithms, including Expectation-Maximization (EM) and SAGE. Notably, careful consideration has been given to the computational cost of these algorithms, ensuring efficiency while optimizing the estimation process for robust and accurate results in the presence of complex statistical distributions.
+Furthermore, I explore the application of deep learning methods in the context of radio interferometers. Leveraging the effectiveness of deep learning tools, I propose an informed neural network architecture derived from robust statistical models. This architecture aims to achieve robustness to data interferences through supervised learning in the realm of radio interferometric imaging.
+Supervised by Pascal Larzabal, co-supervised by Mohammed Nabil El Korso and Arnaud Breloy, and supported by a doctoral contract from the University Paris-Saclay, my research has resulted in meaningful contributions, including the publication of two journal papers [J1]()[J2]() and four conference papers [C1]()[C2]()[C3]()[C4]().
 
-In a second line of work, I proposed a radio-interferometric imaging algorithm robust to the presence
-of outliers in the data based on the expectation-maximization algorithm.
 
-Finally, I am currently working on a neural architecture based on the methodology of algorithm unrolling 
-that produces an interpretable learning imaging algorithm robust to the presence of radiofrequency interferences.
+
 
 <!-- ## News
 **2022/05** - Accepted paper for publication in *Elsevier Signal Processing* [download paper here](https://www.sciencedirect.com/science/article/pii/S0165168422001530)
