@@ -10,14 +10,13 @@ redirect_from:
 
 ## Education
 
-* Ph.D in Statistical signal processing applied to radio-interferometry, **SATIE/Université Paris-Saclay**, 2023
-* M.S. in Electronics and signal processing, **ENSEEIHT**, Toulouse, France 2018
+* **Ph.D in Statistical signal processing applied to radio-interferometry**, *SATIE/Université Paris-Saclay - 2023*
+* **M.S. in Electronics and signal processing**, *ENSEEIHT, Toulouse, France - 2018*
 
 ## Professional Experience
 
 ### Doctoral Researcher
-*Gif-Sur-Yvette, France*
-- **Université Paris-Saclay/SATIE** (2020-2023)
+*2020-2023 - Université Paris-Saclay/SATIE - Gif-Sur-Yvette, France*
 - Developed novel statistical signal processing methodologies for calibration and imaging in radio-interferometric data, considering the presence of interferences.
 - Research Themes: Statistical learning, deep neural networks, inverse problems, radio-interferometry.
 - Contributions:
@@ -28,8 +27,7 @@ redirect_from:
   - Received training in science communication and outreach.
 
 ### R&D Algorithm Engineer
-*St-Aubin, France*
-- **Phasics** (2020-2023)
+*2019-2020 - Phasics - St-Aubin, France*
 - Led the design and development of signal and image processing tools for the analysis of interferometric data from wavefront analyzers, with applications in laser beam characterization, phase microscopy, and optical characterization.
 - Projects:
   - Developed a Python library dedicated to wavefront data analysis.
@@ -38,15 +36,13 @@ redirect_from:
   - Developed image processing solutions for the detection of Gaussian sources in interferograms.
 
 ### Research Intern
-*Toulouse, France*
-- **IRIT/CNRS** (2020-2023)
+*2018 - IRIT/CNRS - Toulouse, France*
 - Conducted research on deep learning-informed phase estimation for audio source separation under the supervision of Cédric Fèvotte and Thomas Oberlin.
 - Utilized non-negative matrix factorization (NMF) for audio source separation.
 - Implemented deep neural networks for phase estimation in the context of audio source separation using TensorFlow.
 
 ### Research Intern
-*Copenhagen, Denmark*
-- **AAU Aalborg Copenhagen** (2020-2023)
+*2017 - AAU Aalborg Copenhagen - Copenhagen, Denmark*
 - Worked on the development of a Generative Adversarial Network (GAN) for generating percussive sounds under the guidance of Hendrick Purwins.
 - Utilized TensorFlow for the implementation of the GAN.
 
