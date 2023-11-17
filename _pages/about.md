@@ -21,7 +21,7 @@ Before my Ph.D., I worked as a research engineer at [Phasics](https://www.phasic
 ### Research interests
 My current research interests span computational imaging, inverse problems, unrolled algorithms, plug-n-play neural network, robust signal processing, structured covariance matrix estimation, interferometry, and sensor array processing.
 
-### My Phd research
+### Phd research
 
 My Ph.D. research, conducted at the SATIE laboratory , delves into the challenges presented by cutting-edge radio interferometers. My work emphasizes the co-conception of signal processing methodologies for calibration and imaging. This includes the development of robust statistical models using compound Gaussian distributions to model the presence of radiofrequency interferences. 
 
