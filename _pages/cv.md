@@ -46,6 +46,11 @@ redirect_from:
 - Worked on the development of a Generative Adversarial Network (GAN) for generating percussive sounds under the guidance of Hendrick Purwins.
 - Utilized TensorFlow for the implementation of the GAN.
 
+## Reviewing Activities
+- IET Signal Processing
+- IEEE Transactions on Image Processing
+- Elsevier Signal Processing
+- EUSIPCO Conference
 
 ## Teaching experience
 
