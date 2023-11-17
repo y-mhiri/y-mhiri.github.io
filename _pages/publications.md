@@ -21,6 +21,9 @@ author_profile: true
   **Yassine Mhiri**, Pascal Larzabal, Mohammed-Nabil El Korso and Arnaud Breloy \
   *Signal Processing Elsevier*. Volume 199, October 2022, article 108613
   [link](https://arxiv.org/pdf/2202.07297.pdf)
+2. Regularized maximum likelihood estimation for radio interferometric imaging in the presence of radiofrequency interefences\
+  **Yassine Mhiri**, Pascal Larzabal, Mohammed-Nabil El Korso and Arnaud Breloy \
+  *Signal Processing Elsevier*. submitted
   <!-- [link](https://www.sciencedirect.com/science/article/pii/S0165168422001530) -->
   
 ## International conference Papers
