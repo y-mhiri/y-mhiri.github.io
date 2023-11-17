@@ -15,6 +15,11 @@ redirect_from:
 
 ## Professional Experience
 
+### Postdoctoral Researcher
+*2023-present - MAP5/Université Paris-Cité - Paris, France*
+- Currently working in the Image group with Andrés Almansa, Rémy Abergel, and Lionel Moisan on hyperspectral image reconstruction. Collaborating with Mauro Dalla-Mura from Gipsa-Lab for the ANR project Fu-MultiSpoc, aiming at building a high-resolution hyperspectral imager based on a Fabry Perot interferometer.
+- Research focus includes hyperspectral image denoising, image restoration, and plug-and-play approaches to inverse problems.
+
 ### Doctoral Researcher
 *2020-2023 - Université Paris-Saclay/SATIE - Gif-Sur-Yvette, France*
 - Developed novel statistical signal processing methodologies for calibration and imaging in radio-interferometric data, considering the presence of interferences.
