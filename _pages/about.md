@@ -24,8 +24,10 @@ My current research interests span computational imaging, inverse problems, unro
 ### My Phd research
 
 My Ph.D. research, conducted at the SATIE laboratory , delves into the challenges presented by cutting-edge radio interferometers. My work emphasizes the co-conception of signal processing methodologies for calibration and imaging. This includes the development of robust statistical models using compound Gaussian distributions to model the presence of radiofrequency interferences. 
+
 Effectively addressing the intricate optimization challenges associated with maximum likelihood estimation for robust distributions involves the application of advanced algorithms, including Expectation-Maximization (EM) and SAGE. Notably, careful consideration has been given to the computational cost of these algorithms, ensuring efficiency while optimizing the estimation process for robust and accurate results in the presence of complex statistical distributions.
 Practical experiments with real data have showcased the effectiveness of the proposed modeling approach in accounting for the presence of radiofrequency interferences in radio-interferometric imaging.
+
 Furthermore, I explore the application of deep learning methods in the context of radio interferometers. Leveraging the effectiveness of deep learning tools, I propose an informed neural network architecture derived from robust statistical models. This architecture aims to achieve robustness to data interferences through supervised learning in the realm of radio interferometric imaging.
 Supervised by Pascal Larzabal, co-supervised by Mohammed Nabil El Korso and Arnaud Breloy, and supported by a doctoral contract from the University Paris-Saclay, my research has resulted in meaningful contributions, including the publication of two journal papers and multiple communications on national and international conferences.
 
