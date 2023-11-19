@@ -48,4 +48,9 @@ author_profile: true
   **Yassine Mhiri**, Pascal Larzabal, Mohammed-Nabil El Korso, Arnaud Breloy \
   *GRETSI 2023* (En soumission)
 
+## Talks and seminars
+
+*2023-02-09* **A Robust algorithm for radio interferometric imaging**, L2S, Centrale-Supelec
+[link](https://s3-seminar.github.io/seminars/yassine-mhiri)
+
 
