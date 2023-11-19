@@ -10,9 +10,9 @@ redirect_from:
 
 ## Bio 
 
-I am a postdoctoral researcher in the Image group at [MAP 5](https://map5.mi.parisdescartes.fr/les-equipes-de-recherche/equipe-traitement-dimages/) Laboratory in Université Paris Cité. Currently collaborating with [Andrés Almansa](https://perso.telecom-paristech.fr/almansa/HomePage/), [Rémy Abergel](https://helios2.mi.parisdescartes.fr/~rabergel/), and [Lionel Moisan](https://helios2.mi.parisdescartes.fr/~moisan/index.php) on hyperspectral image reconstruction. This work is part of the ANR project [Fu-MultiSpoc](https://anr.fr/Projet-ANR-20-ASTR-0006), which aims to develop a high-resolution hyperspectral imager based on a Fabry Perot interferometer. My focus includes hyperspectral image denoising, image restoration, and plug-and-play approaches to inverse problems.
+I am a postdoctoral researcher in the Image group at [MAP 5](https://map5.mi.parisdescartes.fr/les-equipes-de-recherche/equipe-traitement-dimages/) Laboratory in Université Paris Cité. Currently collaborating with [Andrés Almansa](https://perso.telecom-paristech.fr/almansa/HomePage/), [Rémy Abergel](https://helios2.mi.parisdescartes.fr/~rabergel/), and [Lionel Moisan](https://helios2.mi.parisdescartes.fr/~moisan/index.php) on hyperspectral image reconstruction. This work is part of the ANR project [Fu-MultiSpoc](https://anr.fr/Projet-ANR-20-ASTR-0006), which aims to develop a high-resolution hyperspectral imager based on Fabry Perot interferometers. My focus includes hyperspectral image denoising, image restoration, inverse problems, and plug-n-play neural network.
 
-During my Ph.D., supervised by [Pascal Larzabal](https://scholar.google.com/citations?hl=fr&user=aNwgKEEAAAAJ&view_op=list_works&sortby=pubdate), [Mohammed Nabil EL Korso](https://sites.google.com/site/nabkorso/), and [Arnaud Breloy](https://abreloy.github.io/) at the [SATIE](https://satie.ens-paris-saclay.fr/fr/methodes-et-outils-pour-les-signaux-et-systemes) laboratory at Ecole Normale Supérieure Paris-Saclay, I contributed to the field of radio-interferometry. My research focused on signal processing methodologies for the calibration and imaging of cutting-edge radio interferometers. This involved the development of robust statistical models using compound Gaussian distributions to handle radiofrequency interferences, and addressing optimization challenges in maximum likelihood estimation with algorithms such as Expectation-Maximization (EM) and SAGE.
+During my Ph.D., supervised by [Pascal Larzabal](https://scholar.google.com/citations?hl=fr&user=aNwgKEEAAAAJ&view_op=list_works&sortby=pubdate), [Mohammed Nabil EL Korso](https://sites.google.com/site/nabkorso/), and [Arnaud Breloy](https://abreloy.github.io/) at the [SATIE](https://satie.ens-paris-saclay.fr/fr/methodes-et-outils-pour-les-signaux-et-systemes) laboratory at Ecole Normale Supérieure Paris-Saclay, I contributed to the field of radio-interferometry. My research focused on signal processing methodologies for the calibration and imaging of cutting-edge radio interferometers. This involved the development of robust statistical models using compound Gaussian distributions to handle radiofrequency interferences, and addressing optimization challenges in maximum likelihood estimation with algorithms such as the Expectation-Maximization.
 
 Before my Ph.D., I worked as a research engineer at [Phasics](https://www.phasics.com/en/), contributing to the conception and development of innovative algorithms tailored for the analysis of wavefront sensors.
 
@@ -30,15 +30,3 @@ Practical experiments with real data have showcased the effectiveness of the pro
 
 Furthermore, I explored the application of deep learning methods in the context of radio interferometers. Leveraging the effectiveness of deep learning tools, I proposed an informed neural network architecture derived from a robust statistical model. This architecture aims to achieve robustness to data interferences through supervised learning in the realm of radio interferometric imaging.
 Supervised by Pascal Larzabal, co-supervised by Mohammed Nabil El Korso and Arnaud Breloy, and supported by a doctoral contract from the University Paris-Saclay, my research has resulted in meaningful contributions, including the publication of two journal papers and multiple communications on national and international conferences.
-
-
-
-
-<!-- ## News
-**2022/05** - Accepted paper for publication in *Elsevier Signal Processing* [download paper here](https://www.sciencedirect.com/science/article/pii/S0165168422001530)
-
-**2022/02** - New preprint on multifrequency array calibration in presence of radiofrequency interference [download paper here](https://arxiv.org/abs/2202.07297).
-
-**2021/08** - Accepted paper at *EUSIPCO 2021* [download paper here](https://hal.archives-ouvertes.fr/hal-03156738/document).
-
- -->
