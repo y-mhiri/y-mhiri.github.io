@@ -11,7 +11,7 @@ redirect_from:
 ## Education
 
 * **Ph.D in Statistical signal processing applied to radio-interferometry**, *SATIE/Université Paris-Saclay, Gif-sur-yvette, France - 2023*
-* **M.S. in Electronics and signal processing**, *ENSEEIHT, Toulouse, France - 2018*
+* **M.S. in Electronics and signal processing**, *ENSEEIHT, Toulouse, France - 2015-2018*
 
 ## Professional Experience
 
