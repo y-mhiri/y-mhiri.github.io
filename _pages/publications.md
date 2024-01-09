@@ -23,7 +23,7 @@ author_profile: true
   [link](https://arxiv.org/pdf/2202.07297.pdf)
 2. Regularized maximum likelihood estimation for radio interferometric imaging in the presence of radiofrequency interefences\
   **Yassine Mhiri**, Pascal Larzabal, Mohammed-Nabil El Korso and Arnaud Breloy \
-  *Signal Processing Elsevier*. submitted
+  *Signal Processing Elsevier*. accepted and to appear in 2024.
   <!-- [link](https://www.sciencedirect.com/science/article/pii/S0165168422001530) -->
   
 ## International conference Papers
