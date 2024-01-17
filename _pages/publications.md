@@ -47,7 +47,7 @@ author_profile: true
   
 2. Imagerie radio-interférométrique robuste par dépliement neuronal \
   **Yassine Mhiri**, Pascal Larzabal, Mohammed-Nabil El Korso, Arnaud Breloy \
-  *GRETSI 2023* (En soumission)
+  *GRETSI 2023* [link](https://gretsi.fr/data/colloque/pdf/2023_mhiri1116.pdf)
 
 ## Talks and seminars
 
