@@ -24,6 +24,7 @@ type:
         publisher: Elsevier
         doi: 10.1016/j.sigpro.2022.108613
         url: https://www.doi.org/10.1016/j.sigpro.2022.108613
+        pdf: https://hal.science/hal-03953256/file/main.pdf
 
 
   - section_title: International conferences
@@ -38,6 +39,7 @@ type:
         publisher: IEEE
         doi: 10.1109/SiPS55645.2022.9919255
         url: https://doi.org/10.1109/SiPS55645.2022.9919255
+        pdf: https://hal.science/hal-03823295/file/Paper8257-SiPS22.pdf
 
 
       - id: mhiri2021expectation
@@ -49,6 +51,7 @@ type:
         publisher: IEEE
         doi: 10.23919/EUSIPCO54536.2021.9615971
         url: https://doi.org/10.23919/EUSIPCO54536.2021.9615971
+        pdf: https://hal.science/hal-03156738/file/ELKORSO_Robust_DOA.pdf
 
 
 
