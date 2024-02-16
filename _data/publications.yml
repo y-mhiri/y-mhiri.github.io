@@ -12,6 +12,7 @@ type:
         year: 2024
         publisher: Elsevier (accepted, in press)
         doi: 
+        type: article
 
 
       - id: mhiri2022multifrequency
@@ -25,6 +26,8 @@ type:
         doi: 10.1016/j.sigpro.2022.108613
         url: https://www.doi.org/10.1016/j.sigpro.2022.108613
         pdf: https://hal.science/hal-03953256/file/main.pdf
+        type: article
+   
 
 
   - section_title: International conferences
@@ -40,6 +43,7 @@ type:
         doi: 10.1109/SiPS55645.2022.9919255
         url: https://doi.org/10.1109/SiPS55645.2022.9919255
         pdf: https://hal.science/hal-03823295/file/Paper8257-SiPS22.pdf
+        type: inproceedings
 
 
       - id: mhiri2021expectation
@@ -52,6 +56,7 @@ type:
         doi: 10.23919/EUSIPCO54536.2021.9615971
         url: https://doi.org/10.23919/EUSIPCO54536.2021.9615971
         pdf: https://hal.science/hal-03156738/file/ELKORSO_Robust_DOA.pdf
+        type: inproceedings
 
 
 
@@ -75,7 +80,7 @@ type:
         year: 2023
         url: https://gretsi.fr/data/colloque/pdf/2023_wang1095.pdf
         pdf: https://gretsi.fr/data/colloque/pdf/2023_wang1095.pdf
-        keywords: conference nationale
+        type: inproceedings
 
 
       - id: mhiri2022algorithme
@@ -85,6 +90,7 @@ type:
         year: 2022
         url: https://gretsi.fr/data/colloque/pdf/2022_mhiri920.pdf
         pdf: https://gretsi.fr/data/colloque/pdf/2022_mhiri920.pdf
+        type: inproceedings
 
   - section_title: Thesis 
     publications:
@@ -95,4 +101,4 @@ type:
         year: 2023
         url: https://theses.hal.science/tel-04297295v1
         pdf: https://theses.hal.science/tel-04297295v1/file/126729_MHIRI_2023_archivage.pdf
-        type: thesis
+        type: phdthesis
