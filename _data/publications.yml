@@ -85,3 +85,14 @@ type:
         year: 2022
         url: https://gretsi.fr/data/colloque/pdf/2022_mhiri920.pdf
         pdf: https://gretsi.fr/data/colloque/pdf/2022_mhiri920.pdf
+
+  - section_title: Thesis 
+    publications:
+      - id: mhiri2023methodes
+        title: Contributions aux méthodes de calibration et d'imagerie pour les radio-interféromètres en présence d'interférences
+        authors: Yassine Mhiri
+        publisher: Université Paris-Saclay
+        year: 2023
+        url: https://theses.hal.science/tel-04297295v1
+        pdf: https://theses.hal.science/tel-04297295v1/file/126729_MHIRI_2023_archivage.pdf
+        type: thesis
