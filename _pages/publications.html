@@ -1,0 +1,58 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+
+{% for type in site.data.publications.type %}
+
+  <h2> {{type.section_title}} </h2>
+   {% for publications in type.publications %}
+
+    <div class="row", style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="column", style="flex: 1;">
+        <p>{{ publications.year }}</p>
+      </div>
+      <div class="column", style="flex: 4;">
+        <p> <em>{{ publications.title }}</em>, <br> {{ publications.authors }}, <br>
+
+          {% if publications.journal %}
+            {{ publications.journal }},
+          {% elsif publications.conference %}
+            {{ publications.conference }},
+          {% endif %}
+
+          {% if publications.publisher %}
+            {{ publications.publisher }},
+          {% endif %}
+
+          {% if publications.volume %}
+            {{ publications.volume }},
+          {% endif %}
+          {% if publications.pages %}
+            {{ publications.pages }},
+          {% endif %}
+          <br>
+          {% if publications.pdf %}
+          <a href="{{ publications.pdf }}"> <img src="{{ site.baseurl }}/assets/icons/pdf.svg"></a>
+          {% endif %}
+          {% if publications.url %}
+          <a href="{{ publications.url }}"><img src="{{ site.baseurl }}/assets/icons/link.svg", style="width: 20px; height: 20px;"></a>
+          {% endif %}
+          {%if publications.bibtex %}
+          <a href="{{ publications.bibtex }}"> Cite <img src="{{ site.baseurl }}/assets/icons/bibtex.svg"></a>
+          {% endif %}
+
+
+      </div>
+    </div>
+  
+  {% endfor %} 
+
+{% endfor %}
+
+
+
+

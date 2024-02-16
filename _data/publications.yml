@@ -1,0 +1,82 @@
+
+
+type:
+  - section_title: Journal papers
+    publications:
+      - id: mhiri2024regularized
+        title: Regularized maximum likelihood estimation for radio interferometric imaging in the presence of radiofrequency interefences
+        authors: Yassine Mhiri, Mohammed Nabil El Korso, Arnaud Breloy, Pascal Larzabal
+        journal: Signal Processing
+        volume: 
+        pages: 
+        year: 2024
+        publisher: Elsevier (accepted, in press)
+        doi: 
+
+
+      - id: mhiri2022multifrequency
+        title: Multifrequency array calibration in presence of radio frequency interferences
+        authors: Yassine Mhiri, Mohammed Nabil El Korso, Arnaud Breloy, Pascal Larzabal
+        journal: Signal Processing
+        volume: 199
+        pages: 108613
+        year: 2022
+        publisher: Elsevier
+        doi: 10.1016/j.sigpro.2022.108613
+        url: https://www.doi.org/10.1016/j.sigpro.2022.108613
+
+
+  - section_title: International conferences
+    publications:
+
+      - id: mhiri2022robust
+        title: A Robust EM Algorithm for Radio Interferometric Imaging in The Presence of Outliers
+        authors: Yassine Mhiri, Mohammed Nabil El Korso, Arnaud Breloy, Pascal Larzabal
+        conference: 2022 IEEE Workshop on Signal Processing Systems (SiPS)
+        pages: 1--5
+        year: 2022
+        publisher: IEEE
+        doi: 10.1109/SiPS55645.2022.9919255
+        url: https://doi.org/10.1109/SiPS55645.2022.9919255
+
+
+      - id: mhiri2021expectation
+        title: Expectation-Maximization Based Direction of Arrival Estimation Under a Mixture of Noise
+        authors: Yassine Mhiri, Mohammed Nabil El Korso, Lucien Bacharach, Arnaud Breloy, Pascal Larzabal
+        conference: 2021 29th European Signal Processing conference(EUSIPCO)
+        pages: 1890--1893
+        year: 2021
+        publisher: IEEE
+        doi: 10.23919/EUSIPCO54536.2021.9615971
+        url: https://doi.org/10.23919/EUSIPCO54536.2021.9615971
+
+
+
+
+
+  - section_title: National conferences
+    publications:
+      - id: mhiri2022algorithme
+        title: Algorithme SAGE pour la calibration robuste de radio-interféromètres en présence d'interférences
+        authors: Yassine Mhiri, Mohammed Nabil El Korso, Arnaud Breloy, Pascal Larzabal
+        conference: GRETSI
+        year: 2022
+        url: https://gretsi.fr/data/colloque/pdf/2022_mhiri920.pdf
+        pdf: https://gretsi.fr/data/colloque/pdf/2022_mhiri920.pdf
+
+      - id: mhiri2023imagerie
+        title: Imagerie radio-interférométrique robuste par dépliement neuronal
+        authors: Yassine Mhiri, Mohammed Nabil El Korso, Arnaud Breloy, Pascal Larzabal
+        conference: GRETSI
+        year: 2023
+        url: https://gretsi.fr/data/colloque/pdf/2023_mhiri1116.pdf
+        pdf: https://gretsi.fr/data/colloque/pdf/2023_mhiri1116.pdf
+      
+      - id: wang2023borne
+        title: Borne de Barankin vs Borne de Cramer-Rao pour la géométrie de réseaux d’antennes en radioastronomie
+        authors: Jianhua Wang, Lucien Bacharach, Yassine Mhiri, Mohammed Nabil El Korso, Pascal Larzabal
+        conference: GRETSI
+        year: 2023
+        url: https://gretsi.fr/data/colloque/pdf/2023_wang1095.pdf
+        pdf: https://gretsi.fr/data/colloque/pdf/2023_wang1095.pdf
+        keywords: conference nationale
