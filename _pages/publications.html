@@ -16,6 +16,50 @@ author_profile: true
         <p>{{ publications.year }}</p>
       </div>
       <div class="column", style="flex: 4;">
+
+        {% if publications.type == 'Thesis' %}
+          <p> <em>{{ publications.title }}</em>, <br> {{ publications.authors }} <br>
+          {{ publications.school }} <br>
+          {% if publications.pdf %}
+          <a href="{{ publications.pdf }}"> <img src="{{ site.baseurl }}/assets/icons/pdf.svg"></a>
+          {% endif %}
+          {% if publications.url %}
+          <a href="{{ publications.url }}"><img src="{{ site.baseurl }}/assets/icons/link.svg", style="width: 20px; height: 20px;"></a>
+          {% endif %}
+          {%if publications.bibtex %}
+          <a href="{{ publications.bibtex }}"> Cite <img src="{{ site.baseurl }}/assets/icons/bibtex.svg"></a>
+          {% endif %}
+        {% else %}
+          <p> <em>{{ publications.title }}</em>, <br> {{ publications.authors }} <br>
+
+          {% if publications.journal %}
+            {{ publications.journal }}
+          {% elsif publications.conference %}
+            {{ publications.conference }}
+          {% endif %}
+
+          {% if publications.publisher %}
+            ,{{ publications.publisher }}
+          {% endif %}
+
+          {% if publications.volume %}
+            ,{{ publications.volume }}
+          {% endif %}
+          {% if publications.pages %}
+            ,{{ publications.pages }}
+          {% endif %}
+          <br>
+          {% if publications.pdf %}
+          <a href="{{ publications.pdf }}"> <img src="{{ site.baseurl }}/assets/icons/pdf.svg"></a>
+          {% endif %}
+          {% if publications.url %}
+          <a href="{{ publications.url }}"><img src="{{ site.baseurl }}/assets/icons/link.svg", style="width: 20px; height: 20px;"></a>
+          {% endif %}
+          {%if publications.bibtex %}
+          <a href="{{ publications.bibtex }}"> Cite <img src="{{ site.baseurl }}/assets/icons/bibtex.svg"></a>
+          {% endif %}
+        {% endif %}
+
         <p> <em>{{ publications.title }}</em>, <br> {{ publications.authors }} <br>
 
           {% if publications.journal %}
@@ -48,6 +92,8 @@ author_profile: true
 
       </div>
     </div>
+
+
   
   {% endfor %} 
 
