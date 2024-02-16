@@ -31,7 +31,7 @@ author_profile: true
           {% endif %}
 
           {%if publications.bibtex %}
-          <a href="{{ site.baseurl }}/publications/{{ publication.id }}" > Cite <img src="{{ site.baseurl }}/assets/icons/bibtex.svg"></a>
+          <a href="{{ site.baseurl }}/publications/{{ publication.id }}" > Cite</a>
           {% endif %} </p>
 
         {% else %}
@@ -39,21 +39,20 @@ author_profile: true
           <p> <em>{{ publications.title }}</em>, <br> {{ publications.authors }} <br>
 
           {% if publications.journal %}
-            {{ publications.journal }}
+            {{ publications.journal }},
           {% elsif publications.conference %}
-            {{ publications.conference }}
+            {{ publications.conference }},
           {% endif %}
-
           {% if publications.publisher %}
-            ,{{ publications.publisher }}
+           {{ publications.publisher }},
           {% endif %}
 
           {% if publications.volume %}
-            ,{{ publications.volume }}
+          {{ publications.volume }},
           {% endif %}
 
           {% if publications.pages %}
-            ,{{ publications.pages }}
+          {{ publications.pages }}.
           {% endif %}
           <br>
 
@@ -65,9 +64,9 @@ author_profile: true
           <a href="{{ publications.url }}"><img src="{{ site.baseurl }}/assets/icons/link.svg", style="width: 20px; height: 20px;"></a>
           {% endif %}
 
-          {%if publications.bibtex %}
-          <a href="{{ publications.bibtex }}"> Cite <img src="{{ site.baseurl }}/assets/icons/bibtex.svg"></a>
-          {% endif %}
+
+          <a href= "{{ site.baseurl }}/publications/{{ publications.id }}" > Cite <img src="{{ site.baseurl }}/assets/icons/bibtex.svg", style="width: 20px; height: 20px;"></a>
+
           </p>
 
         {% endif %}
