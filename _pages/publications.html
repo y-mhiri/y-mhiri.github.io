@@ -19,9 +19,9 @@ author_profile: true
         <p> <em>{{ publications.title }}</em>, <br> {{ publications.authors }} <br>
 
           {% if publications.journal %}
-            ,{{ publications.journal }}
+            {{ publications.journal }}
           {% elsif publications.conference %}
-            ,{{ publications.conference }}
+            {{ publications.conference }}
           {% endif %}
 
           {% if publications.publisher %}
