@@ -16,23 +16,23 @@ author_profile: true
         <p>{{ publications.year }}</p>
       </div>
       <div class="column", style="flex: 4;">
-        <p> <em>{{ publications.title }}</em>, <br> {{ publications.authors }}, <br>
+        <p> <em>{{ publications.title }}</em>, <br> {{ publications.authors }} <br>
 
           {% if publications.journal %}
-            {{ publications.journal }},
+            ,{{ publications.journal }}
           {% elsif publications.conference %}
-            {{ publications.conference }},
+            ,{{ publications.conference }}
           {% endif %}
 
           {% if publications.publisher %}
-            {{ publications.publisher }},
+            ,{{ publications.publisher }}
           {% endif %}
 
           {% if publications.volume %}
-            {{ publications.volume }},
+            ,{{ publications.volume }}
           {% endif %}
           {% if publications.pages %}
-            {{ publications.pages }},
+            ,{{ publications.pages }}
           {% endif %}
           <br>
           {% if publications.pdf %}
