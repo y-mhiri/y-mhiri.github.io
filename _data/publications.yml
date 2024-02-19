@@ -11,7 +11,8 @@ type:
         pages: 
         year: 2024
         publisher: Elsevier (accepted, in press)
-        doi: 
+        doi: 10.1016/j.sigpro.2024.109430
+        url: https://doi.org/10.1016/j.sigpro.2024.109430
         type: article
 
 
@@ -27,7 +28,7 @@ type:
         url: https://www.doi.org/10.1016/j.sigpro.2022.108613
         pdf: https://hal.science/hal-03953256/file/main.pdf
         type: article
-   
+
 
 
   - section_title: International conferences
