@@ -7,8 +7,8 @@ type:
         title: Regularized maximum likelihood estimation for radio interferometric imaging in the presence of radiofrequency interefences
         authors: Yassine Mhiri, Mohammed Nabil El Korso, Arnaud Breloy, Pascal Larzabal
         journal: Signal Processing
-        volume: 
-        pages: 
+        volume: 220
+        pages: 109430
         year: 2024
         publisher: Elsevier (accepted, in press)
         doi: 10.1016/j.sigpro.2024.109430
