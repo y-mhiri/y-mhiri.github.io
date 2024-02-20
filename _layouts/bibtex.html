@@ -1,0 +1,41 @@
+---
+layout: compress
+---
+
+
+{% if page.type == "article" %}
+
+@{{page.type}}{<br>
+    title={{page.title}},<br>
+    author={{page.authors}},<br>
+    journal={{page.journal}},<br>
+    volume={{page.volume}},<br>
+    pages={{page.pages}},<br>
+    year={{page.year}},<br>
+    publisher={{page.publisher}}<br>
+}
+
+{% endif %}
+
+
+{% if page.type == "inproceedings" %}
+@{{page.type}}{<br>
+    title={{page.title}},<br>
+    author={{page.authors}},<br>
+    booktitle={{page.conference}},<br>
+    year={{page.year}},<br>
+    publisher={{page.publisher}}<br>
+}
+
+{% endif %}
+
+{% if page.type == "phdthesis" %}
+@{{page.type}}{<br>
+    title={{page.title}},<br>
+    author={{page.authors}},<br>
+    school={{page.school}},<br>
+    year={{page.year}}<br>
+}
+
+{% endif %}
+
