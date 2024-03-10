@@ -2,10 +2,15 @@
 
 type:
   - section_title: Submitted
-    publication:
+    publications:
       - id: mhiri2024eusipco
         title: Hyperspectral signal reconstruction from interferometric measurements with enriched Fourier bases
         authors: Yassine Mhiri, Rémy Abergel, Andrés Almansa, Lionel Moisan
+        conference: 2024 32nd European Signal Processing conference(EUSIPCO)
+        type: inproceedings
+      - id: nawel2024eusipco
+        title: Unrolled Expectation Maximization for Sparse Radio Interferometric Imaging
+        authors: Nawel Arab, Yassine Mhiri, Isabelle Vin, Mohammed Nabil El Korso, Pascal Larzabal
         conference: 2024 32nd European Signal Processing conference(EUSIPCO)
         type: inproceedings
         
