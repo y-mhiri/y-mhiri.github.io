@@ -7,9 +7,8 @@ type:
         title: Hyperspectral signal reconstruction from interferometric measurements with enriched Fourier bases
         authors: Yassine Mhiri, Rémy Abergel, Andrés Almansa, Lionel Moisan
         conference: 2024 32nd European Signal Processing conference(EUSIPCO)
-        url: 
         type: inproceedings
-
+        
   - section_title: Journal papers
     publications:
       - id: mhiri2024regularized
