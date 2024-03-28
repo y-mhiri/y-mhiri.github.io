@@ -9,7 +9,7 @@ type:
         conference: 2024 32nd European Signal Processing conference(EUSIPCO)
         type: inproceedings
         url: https://hal.science/hal-04506638
-        pdf: https://hal.science/hal-04506638/imspoc_map5.pdf
+        pdf: https://hal.science/hal-04506638/file/imspoc_map5.pdf
 
       - id: nawel2024eusipco
         title: Unrolled Expectation Maximization for Sparse Radio Interferometric Imaging
