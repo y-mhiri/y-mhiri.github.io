@@ -15,8 +15,11 @@ redirect_from:
 
 ## Professional Experience
 
+### Associate professor
+*2024-present - LISTIC/Université Savoie Mont Blanc - Annecy, France*
+
 ### Postdoctoral Researcher
-*2023-present - MAP5/Université Paris-Cité - Paris, France*
+*2023-2024 - MAP5/Université Paris-Cité - Paris, France*
 - Currently working in the Image group with Andrés Almansa, Rémy Abergel, and Lionel Moisan on hyperspectral image reconstruction. Collaborating with Mauro Dalla-Mura from Gipsa-Lab for the ANR project Fu-MultiSpoc, aiming at building a high-resolution hyperspectral imager based on a Fabry Perot interferometer.
 - Research focus includes hyperspectral image denoising, image restoration, and plug-and-play approaches to inverse problems.
 
