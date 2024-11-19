@@ -35,4 +35,4 @@ Supervised by Pascal Larzabal, co-supervised by Mohammed Nabil El Korso and Arna
 
 ### Internship 
 
-- [Design of an Unrolled Neural Network for Hyperspectral Pansharpening]({{ site.url }}/assets/stages/2024-2025_sujet_stage.pdf)
+- [Design of an Unrolled Neural Network for Hyperspectral Pansharpening]({{ site.url }}/stages/2024-2025_sujet_stage.pdf)
