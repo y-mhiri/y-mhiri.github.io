@@ -30,3 +30,9 @@ Practical experiments with real data have showcased the effectiveness of the pro
 
 Furthermore, I explored the application of deep learning methods in the context of radio interferometers. Leveraging the effectiveness of deep learning tools, I proposed an informed neural network architecture derived from a robust statistical model. This architecture aims to achieve robustness to data interferences through supervised learning in the realm of radio interferometric imaging.
 Supervised by Pascal Larzabal, co-supervised by Mohammed Nabil El Korso and Arnaud Breloy, and supported by a doctoral contract from the University Paris-Saclay, my research has resulted in meaningful contributions, including the publication of two journal papers and multiple communications on national and international conferences. -->
+
+## Open Positions 
+
+### Internship 
+
+- [Design of an Unrolled Neural Network for Hyperspectral Pansharpening]({{ site.url }}/assets/stages/2024-2025_sujet_stage.pdf)
