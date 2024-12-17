@@ -26,7 +26,7 @@ redirect_from:
 ### Phd 
 *2020-2023 - Université Paris-Saclay/SATIE - Gif-Sur-Yvette, France*
 - Developed novel statistical signal processing methodologies for calibration and imaging in radio-interferometric data, considering the presence of interferences.
-- Research Themes: Statistical learning, deep neural networks, inverse problems, radio-interferometry.
+- Research themes: Statistical learning, deep neural networks, inverse problems, radio-interferometry.
 - Contributions:
   - Published in national and international journals and conferences.
   - Contributed to the python library (pfb-clean) dedicated to radio-interferometric imaging on voluminous data for the MeerKat radio telescope.
