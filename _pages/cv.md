@@ -23,7 +23,7 @@ redirect_from:
 - As part of the Image group, conducted research on hyperspectral image reconstruction involving Andrés Almansa, Rémy Abergel, and Lionel Moisan. Collaborating with Mauro Dalla-Mura from Gipsa-Lab for the ANR project Fu-MultiSpoc, aiming at building a high-resolution hyperspectral imager based on a Fabry Perot interferometer.
 - Research focus include hyperspectral image denoising, image restoration, and plug-and-play approaches to inverse problems.
 
-### Phd 
+### Phd in statistical signal processing
 *2020-2023 - Université Paris-Saclay/SATIE - Gif-Sur-Yvette, France*
 - Developed novel statistical signal processing methodologies for calibration and imaging in radio-interferometric data, considering the presence of interferences.
 - Research themes: Statistical learning, deep neural networks, inverse problems, radio-interferometry.
