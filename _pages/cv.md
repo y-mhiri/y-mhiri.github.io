@@ -15,15 +15,15 @@ redirect_from:
 
 ## Professional Experience
 
-### Associate professor
+### **Current position:** Associate professor
 *2024-present - LISTIC/Université Savoie Mont Blanc - Annecy, France*
 
-### Postdoctoral Researcher
+### Postdoctoral Research
 *2023-2024 - MAP5/Université Paris-Cité - Paris, France*
 - Currently working in the Image group with Andrés Almansa, Rémy Abergel, and Lionel Moisan on hyperspectral image reconstruction. Collaborating with Mauro Dalla-Mura from Gipsa-Lab for the ANR project Fu-MultiSpoc, aiming at building a high-resolution hyperspectral imager based on a Fabry Perot interferometer.
 - Research focus includes hyperspectral image denoising, image restoration, and plug-and-play approaches to inverse problems.
 
-### Doctoral Researcher
+### Phd 
 *2020-2023 - Université Paris-Saclay/SATIE - Gif-Sur-Yvette, France*
 - Developed novel statistical signal processing methodologies for calibration and imaging in radio-interferometric data, considering the presence of interferences.
 - Research Themes: Statistical learning, deep neural networks, inverse problems, radio-interferometry.
@@ -43,7 +43,7 @@ redirect_from:
   - Applied machine learning for temperature calibration of wavefront analyzers.
   - Developed image processing solutions for the detection of Gaussian sources in interferograms.
 
-### Research Intern
+<!-- ### Research Intern
 *2018 - IRIT/CNRS - Toulouse, France*
 - Conducted research on deep learning-informed phase estimation for audio source separation under the supervision of Cédric Fèvotte and Thomas Oberlin.
 - Utilized non-negative matrix factorization (NMF) for audio source separation.
@@ -52,7 +52,7 @@ redirect_from:
 ### Research Intern
 *2017 - AAU Aalborg Copenhagen - Copenhagen, Denmark*
 - Worked on the development of a Generative Adversarial Network (GAN) for generating percussive sounds under the guidance of Hendrick Purwins.
-- Utilized TensorFlow for the implementation of the GAN.
+- Utilized TensorFlow for the implementation of the GAN. -->
 
 ## Reviewing Activities
 - IET Signal Processing
@@ -60,11 +60,11 @@ redirect_from:
 - Elsevier Signal Processing
 - EUSIPCO Conference
 
-## Teaching experience
+<!-- ## Teaching experience
 
 * 2020 - 2023: Associate teacher in an image processing course at Polytech Paris-Saclay.
 * 2022 - 2023: Associate teacher in a telecommunication course at Polytech Paris-Saclay.
-* 2020 - 2022: Associate teacher for an Advanced C++ course at Polytech Paris-Saclay.
+* 2020 - 2022: Associate teacher for an Advanced C++ course at Polytech Paris-Saclay. -->
 
  
 ## Skills
