@@ -35,7 +35,7 @@ Supervised by Pascal Larzabal, co-supervised by Mohammed Nabil El Korso and Arna
 
 ### Internship 
 
-- [Design of an Unrolled Neural Network for Hyperspectral Pansharpening]({{ site.url }}/stages/unrolled_pansharpening_internship.pdf)
+- [**Closed**][Design of an Unrolled Neural Network for Hyperspectral Pansharpening]({{ site.url }}/stages/unrolled_pansharpening_internship.pdf)
 - [Classical GAS - Classical methods for Generative Audio Synthesis]({{ site.url }}/stages/ddsp_internship.pdf)
 
 
