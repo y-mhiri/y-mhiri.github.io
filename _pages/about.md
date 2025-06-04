@@ -9,7 +9,7 @@ redirect_from:
 ---
 ## News
 
-- **[19-06-2025]** POPILSS Seminar will take place at LISTIC, Annecy (more info [popils-day.github.io](https://popils-day.github.io/))
+- **[19-06-2025]** POPILSS Seminar will take place at LISTIC, Annecy (more info at [popils-day.github.io](https://popils-day.github.io/))
 
 ## Bio 
 
