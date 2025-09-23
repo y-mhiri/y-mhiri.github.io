@@ -12,14 +12,14 @@ type:
         journal: Signal Processing
         publisher: Elsevier
         url: https://hal.science/hal-04966761v1/file/Nawel_Arab_submission_final.pdf
-        year: 2024
+        year: 2025
         type: article
       - id: bester2024astronomy
         title: Africanus III. pfb-imaging -- a flexible radio interferometric imaging suite
         authors: Hertzog L. Bester, Jonathan S. Kenyon, Audrey Repetti, Simon J. Perkins, Oleg M. Smirnov, Tariq Blecher, Yassine Mhiri, Jakob Roth, Ian Heywood, Yves Wiaux, Benjamin V. Hugo
         journal: Astronomy and Computing
         publisher: Elsevier
-        year: 2024
+        year: 2025
         url: https://arxiv.org/abs/2412.10073
         type: article
       - id: mhiri2024regularized
