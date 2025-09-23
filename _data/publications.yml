@@ -1,13 +1,17 @@
 
 
 type:
-  - section_title: Submitted
+  # - section_title: Submitted
+  #   publications:
+        
+  - section_title: Journal papers
     publications:
       - id: arab2024signalprocessing
         title: Unrolled expectation maximization algorithm for radio interferometric imaging in presence of non gaussian interferences Signal Processing
         authors: Nawel Arab, Yassine Mhiri, Isabelle Vin, Mohammed Nabil El Korso, Pascal Larzabal
         journal: Signal Processing
         publisher: Elsevier
+        url: https://hal.science/hal-04966761v1/file/Nawel_Arab_submission_final.pdf
         year: 2024
         type: article
       - id: bester2024astronomy
@@ -18,9 +22,6 @@ type:
         year: 2024
         url: https://arxiv.org/abs/2412.10073
         type: article
-        
-  - section_title: Journal papers
-    publications:
       - id: mhiri2024regularized
         title: Regularized maximum likelihood estimation for radio interferometric imaging in the presence of radiofrequency interefences
         authors: Yassine Mhiri, Mohammed Nabil El Korso, Arnaud Breloy, Pascal Larzabal

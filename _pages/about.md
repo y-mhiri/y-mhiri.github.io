@@ -7,16 +7,13 @@ redirect_from:
   - /about/
   - /about.html
 ---
-## News
-
-- **[19-06-2025]** POPILSS Seminar will take place at LISTIC, Annecy (more info at [popils-day.github.io](https://popils-day.github.io/))
 
 ## Bio 
 
 I am an associate professor at the [LISTIC](https://www.univ-smb.fr/listic/) laboratory in Université Savoie Mont Blanc. 
-My research interests span statistical signal and image processing and computational imaging with applications in radio-interferometry hyperspectral imaging and sensor array processing. More precisely, I develop methodological contributions in various topics such as : inverse problems, unrolled algorithms, plug-n-play neural network, robust statistical signal processing and structured covariance matrix estimation.
+My research interests span statistical signal and image processing and computational imaging with applications in radio-interferometry, remote sensing imaging and sensor array processing. More precisely, I develop methodological contributions in various topics such as : inverse problems, learning based signal processing, robust statistical signal processing and structured covariance matrix estimation.
 
-I've conducted postdoctoral research in the Image group at the [MAP 5](https://map5.mi.parisdescartes.fr/les-equipes-de-recherche/equipe-traitement-dimages/) Laboratory in Université Paris Cité. Collaborating with [Andrés Almansa](https://perso.telecom-paristech.fr/almansa/HomePage/), [Rémy Abergel](https://helios2.mi.parisdescartes.fr/~rabergel/), and [Lionel Moisan](https://helios2.mi.parisdescartes.fr/~moisan/index.php) on hyperspectral image reconstruction. This work was part of the ANR project [Fu-MultiSpoc](https://anr.fr/Projet-ANR-20-ASTR-0006), which aimed to develop a high-resolution hyperspectral imager based on Fabry Perot interferometers. The focus included hyperspectral image denoising, image restoration, inverse problems, and plug-n-play neural network.
+I've conducted postdoctoral research in the Image group at the [MAP 5](https://map5.mi.parisdescartes.fr/les-equipes-de-recherche/equipe-traitement-dimages/) Laboratory in Université Paris Cité. Collaborating with [Andrés Almansa](https://perso.telecom-paristech.fr/almansa/HomePage/), [Rémy Abergel](https://helios2.mi.parisdescartes.fr/~rabergel/), and [Lionel Moisan](https://helios2.mi.parisdescartes.fr/~moisan/index.php) on hyperspectral image reconstruction. This work was part of the ANR project [Fu-MultiSpoc](https://anr.fr/Projet-ANR-20-ASTR-0006), which aimed to develop a high-resolution hyperspectral imager based on Fabry Perot interferometers. The focus included hyperspectral image denoising, restoration and inverse problems.
 
 During my Ph.D., supervised by [Pascal Larzabal](https://scholar.google.com/citations?hl=fr&user=aNwgKEEAAAAJ&view_op=list_works&sortby=pubdate), [Mohammed Nabil EL Korso](https://sites.google.com/site/nabkorso/), and [Arnaud Breloy](https://abreloy.github.io/) at the [SATIE](https://satie.ens-paris-saclay.fr/fr/methodes-et-outils-pour-les-signaux-et-systemes) laboratory at Ecole Normale Supérieure Paris-Saclay, I contributed to the field of radio-interferometry. My research focused on signal processing methodologies for the calibration and imaging of cutting-edge radio interferometers. This involved the development of robust statistical models using compound Gaussian distributions to handle radiofrequency interferences, and addressing optimization challenges in maximum likelihood estimation with algorithms such as the Expectation-Maximization.
 
@@ -38,7 +35,5 @@ Supervised by Pascal Larzabal, co-supervised by Mohammed Nabil El Korso and Arna
 
 ### Internship 
 
-- [**Closed**][Design of an Unrolled Neural Network for Hyperspectral Pansharpening]({{ site.url }}/stages/unrolled_pansharpening_internship.pdf)
-- [**Closed**][Classical GAS - Classical methods for Generative Audio Synthesis]({{ site.url }}/stages/ddsp_internship.pdf)
-
+- [Despeckling of SAR Remote Sensing Images with Unrolled Neural Networks]({{ site.url }}/stages/unrolled_despeckling_internship.pdf)
 
