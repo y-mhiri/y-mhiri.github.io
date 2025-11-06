@@ -35,5 +35,6 @@ Supervised by Pascal Larzabal, co-supervised by Mohammed Nabil El Korso and Arna
 
 ### Internship 
 
-- [Despeckling of SAR Remote Sensing Images with Unrolled Neural Networks]({{ site.url }}/stages/unrolled_despeckling_internship.pdf)
+- [**Closed**][Despeckling of SAR Remote Sensing Images with Unrolled Neural Networks]({{ site.url }}/stages/unrolled_despeckling_internship.pdf)
+- [Domain Adaptation of Unrolled Neural Network]({{ site.url }}/stages/sujet_stage_da.pdf)
 
