@@ -35,6 +35,5 @@ Supervised by Pascal Larzabal, co-supervised by Mohammed Nabil El Korso and Arna
 
 ### Internship 
 
-- [Quantification in radioastronomy imaging]({{ site.url }}/stages/stage-quantification.pdf)
 - [Domain Adaptation of Unrolled Neural Network]({{ site.url }}/stages/sujet_stage_da.pdf)
 
