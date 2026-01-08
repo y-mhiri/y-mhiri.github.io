@@ -33,6 +33,10 @@ Supervised by Pascal Larzabal, co-supervised by Mohammed Nabil El Korso and Arna
 
 ## Open Positions 
 
+### PhD
+
+- [Multimodal SAR-Optical Registration via Learned Covariance and Metrics]({{ site.url }}/phd/these-CNES-LISTIC.pdf)(**Apply before March 13th**)
+
 ### Internship 
 
 - [Quantification in radioastronomy imaging]({{ site.url }}/stages/stage-quantification.pdf)
