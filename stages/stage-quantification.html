@@ -1,187 +1,84 @@
-<!-- wp:uagb/container {"block_id":"f1e8b6f4","contentWidth":"default","minHeightDesktop":0,"directionDesktop":"row","directionTablet":"row","directionMobile":"column","variationSelected":true,"isBlockRootParent":true,"widthSetByUser":true} -->
-<div class="wp-block-uagb-container uagb-block-f1e8b6f4 default uagb-is-root-container"><!-- wp:uagb/container {"block_id":"3561e804"} -->
-<div class="wp-block-uagb-container uagb-block-3561e804"></div>
-<!-- /wp:uagb/container --></div>
-<!-- /wp:uagb/container -->
+---
+layout: single
+title: "Internship: Quantification in Radio Astronomy Imaging"
+author_profile: true
+---
 
-<!-- wp:paragraph -->
 <p>Recruit a end of study engineer or Master 2 student in electronics or computer science. The aim of this internship is to explore the potential energy and latency benefits of quantification in radio astronomy imaging.</p>
-<!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>Keywords: quantification, radio astronomy, high-performance computing, energy, optimization</p>
-<!-- /wp:paragraph -->
+<p><strong>Keywords:</strong> quantification, radio astronomy, high-performance computing, energy, optimization</p>
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading" id="Context"><a href="https://codimd.math.cnrs.fr/0y2JXfjHSbWCRWyzNtSBBA#Context"></a>Context</h2>
-<!-- /wp:heading -->
+<h2>Context</h2>
 
-<!-- wp:paragraph -->
-<p>Radio-interferometers image the sky in radio domain from the measurement of an array of antennas. The Square Kilometer Array (SKA) involves a large number of antennas and plans to greatly improve the resolution of the reconstructed images. Regarding the data processing pipelines, this new instrument will lead to a data deluge with data rates of multiple Terabits per seconds. To scale with the full potential of the instruments and to match sustainability objectives, a set of constraints should be taken into account :</p>
-<!-- /wp:paragraph -->
+<p>Radio-interferometers image the sky in radio domain from the measurement of an array of antennas. The Square Kilometer Array (SKA) involves a large number of antennas and plans to greatly improve the resolution of the reconstructed images. Regarding the data processing pipelines, this new instrument will lead to a data deluge with data rates of multiple Terabits per seconds. To scale with the full potential of the instruments and to match sustainability objectives, a set of constraints should be taken into account:</p>
 
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>storage: no data storage, real-time processing</li>
-<!-- /wp:list-item -->
+<ul>
+  <li>storage: no data storage, real-time processing</li>
+  <li>compute: limited energy for cost and environmental reasons</li>
+</ul>
 
-<!-- wp:list-item -->
-<li>compute: limited energy for cost and environmental reasons</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+<p>In fact, the data size represent one the main bottleneck in the imaging pipeline. Computing the dirty image and convolving the PSF with a model image represent ones of the mains bottleneck in imaging pipelines. Existing work in data compression<sup>[1]</sup> and energy reduction<sup>[2]</sup> show that reduced precisions can be implemented for those steps. Furthermore, reducing the data size and complexity of those steps can make the implementation of more complex optimization algorithm scalable. However, in more complex imaging pipeline, the reduction in precision can lead to non-negligeable artifacts <sup>[3][4]</sup>.</p>
 
-<!-- wp:paragraph -->
-<p>In fact, the data size represent one the main botlleneck in the imaging pipeline. Computing the dirty image and convolving the PSF with a model image represent ones of the mains bottleneck in imaging pipelines. Existing work in data compression<sup><a href="https://codimd.math.cnrs.fr/0y2JXfjHSbWCRWyzNtSBBA#fn1">[1]</a></sup>&nbsp;and energy reduction<sup><a href="https://codimd.math.cnrs.fr/0y2JXfjHSbWCRWyzNtSBBA#fn2">[2]</a></sup>&nbsp;show that reduced precisions can be implemented for those steps. Furthermore, reducing the data size and complexity of those steps can make the implementation of more complex optimization algorithm scalable. However, in more complex imaging pipeline, the reduction in precision can lead to non-negligeable artifacts&nbsp;<sup><a href="https://codimd.math.cnrs.fr/0y2JXfjHSbWCRWyzNtSBBA#fn3">[3]</a></sup><sup><a href="https://codimd.math.cnrs.fr/0y2JXfjHSbWCRWyzNtSBBA#fn4">[4]</a></sup>.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
 <p>This collaborative project between LISTIC in Annecy and IETR in Rennes propose to look directly at the size of the data transfered and computed, using quantification. To do so, various quantification strategies to reduce the memory footprint in imaging pipeline and their implementations in imaging algorithms will be explored.</p>
-<!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading" id="Objectives"><a href="https://codimd.math.cnrs.fr/0y2JXfjHSbWCRWyzNtSBBA#Objectives"></a>Objectives</h2>
-<!-- /wp:heading -->
+<h2>Objectives</h2>
 
-<!-- wp:paragraph -->
 <p>The internship will explore the quantification influence on different radio astronomy imaging algorithms:</p>
-<!-- /wp:paragraph -->
 
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Evaluate algorithms with different quantification format and sizes, including floating-point, block floating-point, fixed-point.</li>
-<!-- /wp:list-item -->
+<ul>
+  <li>Evaluate algorithms with different quantification format and sizes, including floating-point, block floating-point, fixed-point.</li>
+  <li>Implement different algorithms for the forward and backward radio-interferometric measurement operator in mixed precision (gridding and FFT<sup>[5]</sup>, NUFFT<sup>[6]</sup>, Grid-to-Grid<sup>[7]</sup>).</li>
+  <li>Quantify the influence of mixed precisions on the convergence of optimization based imaging algorithms<sup>[4]</sup>.</li>
+  <li>The overall objective is to explore the pareto frontier, looking for new tradeoffs in energy, accuracy, memory and latency.</li>
+</ul>
 
-<!-- wp:list-item -->
-<li>Implement different algorithms for the forward and backward radio-interferometric measurement operator in mixed precision (gridding and FFT&nbsp;<sup><a href="https://codimd.math.cnrs.fr/0y2JXfjHSbWCRWyzNtSBBA#fn5">[5]</a></sup>, NUFFT&nbsp;<sup><a href="https://codimd.math.cnrs.fr/0y2JXfjHSbWCRWyzNtSBBA#fn6">[6]</a></sup>, Grid-to-Grid&nbsp;<sup><a href="https://codimd.math.cnrs.fr/0y2JXfjHSbWCRWyzNtSBBA#fn7">[7]</a></sup>).</li>
-<!-- /wp:list-item -->
+<h2>Skills</h2>
 
-<!-- wp:list-item -->
-<li>Quantify the influence of mixed precisions on the convergence of optimization based imaging algorithms&nbsp;<sup><a href="https://codimd.math.cnrs.fr/0y2JXfjHSbWCRWyzNtSBBA#fn4">[4:1]</a></sup>.</li>
-<!-- /wp:list-item -->
+<p><strong>Essential</strong></p>
+<ul>
+  <li>Development in Python</li>
+  <li>Integration with bash, git</li>
+</ul>
 
-<!-- wp:list-item -->
-<li>The overall objective is to explore the pareto frontier, looking for new tradeoffs in energy, accuracy, memory and latency.</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+<p><strong>Desirable</strong></p>
+<ul>
+  <li>Development in High-Performance Computing environment</li>
+  <li>Signal, image processing, radio astronomy algorithms</li>
+</ul>
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading" id="Skills"><a href="https://codimd.math.cnrs.fr/0y2JXfjHSbWCRWyzNtSBBA#Skills"></a>Skills</h2>
-<!-- /wp:heading -->
+<h2>Characteristics</h2>
 
-<!-- wp:paragraph -->
-<p>Essential</p>
-<!-- /wp:paragraph -->
+<ul>
+  <li>Duration: 4 to 6 months</li>
+  <li>Start: February 2026</li>
+  <li>Stipend: 669,90€ / month</li>
+</ul>
 
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Developpement in Python</li>
-<!-- /wp:list-item -->
+<h2>Location</h2>
 
-<!-- wp:list-item -->
-<li>Integration with bash, git</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-<p>Desirable</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Development in High-Performance Computing environment</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Signal, image processing, radio astronomy algorithms</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:heading -->
-<h2 class="wp-block-heading" id="Characteristics"><a href="https://codimd.math.cnrs.fr/0y2JXfjHSbWCRWyzNtSBBA#Characteristics"></a>Characteristics</h2>
-<!-- /wp:heading -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Duration: 4 to 6 months</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Start: February 2026</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Stipend: 669,90€ / month</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:heading -->
-<h2 class="wp-block-heading" id="Location"><a href="https://codimd.math.cnrs.fr/0y2JXfjHSbWCRWyzNtSBBA#Location"></a>Location</h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
 <p>The project will take place in Annecy (LISTIC) or Rennes (IETR), with mobilities between laboratories as well as a 1 week hackathon planned in Nice in June with ECLAT.</p>
-<!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading" id="Supervisors"><a href="https://codimd.math.cnrs.fr/0y2JXfjHSbWCRWyzNtSBBA#Supervisors"></a>Supervisors</h2>
-<!-- /wp:heading -->
+<h2>Supervisors</h2>
 
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li><a href="https://y-mhiri.github.io/" target="_blank" rel="noreferrer noopener">Yassine Mhiri, LISTIC, Annecy</a></li>
-<!-- /wp:list-item -->
+<ul>
+  <li><a href="https://y-mhiri.github.io/" target="_blank" rel="noreferrer noopener">Yassine Mhiri, LISTIC, Annecy</a></li>
+  <li><a href="https://dardarel.github.io/" target="_blank" rel="noreferrer noopener">Mickaël Dardaillon, IETR, Rennes</a></li>
+</ul>
 
-<!-- wp:list-item -->
-<li><a href="https://dardarel.github.io/" target="_blank" rel="noreferrer noopener">Mickaël Dardaillon, IETR, Rennes</a></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+<h2>Applications</h2>
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading" id="Applications"><a href="https://codimd.math.cnrs.fr/0y2JXfjHSbWCRWyzNtSBBA#Applications"></a>Applications</h2>
-<!-- /wp:heading -->
+<p>Send resume and application letter to <a href="mailto:yassine.mhiri@univ-smb.fr">yassine.mhiri@univ-smb.fr</a>, <a href="mailto:mickael.dardaillon@insa-rennes.fr">mickael.dardaillon@insa-rennes.fr</a></p>
 
-<!-- wp:paragraph -->
-<p>Send resume and application letter to&nbsp;<a href="mailto:yassine.mhiri@univ-smb.fr" target="_blank" rel="noreferrer noopener">yassine.mhiri@univ-smb.fr</a>,&nbsp;<a href="mailto:mickael.dardaillon@insa-rennes.fr" target="_blank" rel="noreferrer noopener">mickael.dardaillon@insa-rennes.fr</a></p>
-<!-- /wp:paragraph -->
+<h2>References</h2>
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading" id="References"><a href="https://codimd.math.cnrs.fr/0y2JXfjHSbWCRWyzNtSBBA#References"></a>References</h2>
-<!-- /wp:heading -->
+<hr/>
 
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
-
-<!-- wp:list {"ordered":true} -->
-<ol class="wp-block-list"><!-- wp:list-item -->
-<li><a href="https://arxiv.org/abs/1609.02019" target="_blank" rel="noreferrer noopener">Compression of interferometric radio-astronomical data, A. R. Offringa</a>&nbsp;<a href="https://codimd.math.cnrs.fr/0y2JXfjHSbWCRWyzNtSBBA#fnref1">↩︎</a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><a href="https://ieeexplore.ieee.org/document/9709826" target="_blank" rel="noreferrer noopener">Reduced-Precision Acceleration of Radio-Astronomical Imaging on Reconfigurable Hardware, S. Corda</a>&nbsp;<a href="https://codimd.math.cnrs.fr/0y2JXfjHSbWCRWyzNtSBBA#fnref2">↩︎</a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><a href="https://hal.science/hal-01837982v1" target="_blank" rel="noreferrer noopener">A Study on Convolution Operator Using Half Precision Floating Point Numbers on GPU for Radioastronomy Deconvolution</a>&nbsp;<a href="https://codimd.math.cnrs.fr/0y2JXfjHSbWCRWyzNtSBBA#fnref3">↩︎</a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><a href="https://arxiv.org/pdf/2412.10073" target="_blank" rel="noreferrer noopener">Africanus III. pfb-imaging - a flexible radio interferometric imaging suite</a>&nbsp;<a href="https://codimd.math.cnrs.fr/0y2JXfjHSbWCRWyzNtSBBA#fnref4">↩︎</a>&nbsp;<a href="https://codimd.math.cnrs.fr/0y2JXfjHSbWCRWyzNtSBBA#fnref4:1">↩︎</a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><a href="https://www.aanda.org/articles/aa/pdf/2021/02/aa39723-20.pdf" target="_blank" rel="noreferrer noopener">Efficient wide-field radio interferometry response</a>&nbsp;<a href="https://codimd.math.cnrs.fr/0y2JXfjHSbWCRWyzNtSBBA#fnref5">↩︎</a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><a href="https://epubs.siam.org/doi/abs/10.1137/S003614450343200X" target="_blank" rel="noreferrer noopener">Accelerating the Nonuniform Fast Fourier Transform∗</a>&nbsp;<a href="https://codimd.math.cnrs.fr/0y2JXfjHSbWCRWyzNtSBBA#fnref6">↩︎</a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><a href="https://hal.science/hal-03725824v1/file/ICIP___Paper.pdf" target="_blank" rel="noreferrer noopener">Fast Sky to Sky Interpolation for Radio Interferometric<br>Imaging</a>&nbsp;<a href="https://codimd.math.cnrs.fr/0y2JXfjHSbWCRWyzNtSBBA#fnref7">↩︎</a></li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
+<ol>
+  <li><a href="https://arxiv.org/abs/1609.02019" target="_blank" rel="noreferrer noopener">Compression of interferometric radio-astronomical data, A. R. Offringa</a></li>
+  <li><a href="https://ieeexplore.ieee.org/document/9709826" target="_blank" rel="noreferrer noopener">Reduced-Precision Acceleration of Radio-Astronomical Imaging on Reconfigurable Hardware, S. Corda</a></li>
+  <li><a href="https://hal.science/hal-01837982v1" target="_blank" rel="noreferrer noopener">A Study on Convolution Operator Using Half Precision Floating Point Numbers on GPU for Radioastronomy Deconvolution</a></li>
+  <li><a href="https://arxiv.org/pdf/2412.10073" target="_blank" rel="noreferrer noopener">Africanus III. pfb-imaging - a flexible radio interferometric imaging suite</a></li>
+  <li><a href="https://www.aanda.org/articles/aa/pdf/2021/02/aa39723-20.pdf" target="_blank" rel="noreferrer noopener">Efficient wide-field radio interferometry response</a></li>
+  <li><a href="https://epubs.siam.org/doi/abs/10.1137/S003614450343200X" target="_blank" rel="noreferrer noopener">Accelerating the Nonuniform Fast Fourier Transform</a></li>
+  <li><a href="https://hal.science/hal-03725824v1/file/ICIP___Paper.pdf" target="_blank" rel="noreferrer noopener">Fast Sky to Sky Interpolation for Radio Interferometric Imaging</a></li>
+</ol>
