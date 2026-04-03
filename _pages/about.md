@@ -36,6 +36,7 @@ Supervised by Pascal Larzabal, co-supervised by Mohammed Nabil El Korso and Arna
 ### PhD
 
 - [Multimodal SAR-Optical Registration via Learned Covariance and Metrics]({{ site.url }}/phd/these-CNES-LISTIC.pdf) - __*Deadline March 13th*__
+- [Adaptation de domaines pour la classification de séries temporelles d'images sonar à base de statistiques d'ordre deux]({{ site.url }}/phd/these-exail.pdf) - __*OPEN*__
 
 ### Internship 
 
