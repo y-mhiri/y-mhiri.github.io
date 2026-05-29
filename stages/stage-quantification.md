@@ -1,13 +1,9 @@
 ---
-permalink: /
+permalink: /stages/stages-quantification
 title: "Internship in Quantification for Radio-Astronomy"
 excerpt: "Internship in Quantification for Radio-Astronomy"
 author_profile: true
-redirect_from: 
-  - /stages/stages-quantification
 ---
-
-# Internship in Quantification for Radio-Astronomy
 
 
 Recruit a Master 1 or Master 2 student in electronics or computer science. The aim of this internship is to explore the potential energy and latency benefits of quantification in radio astronomy imaging.
@@ -75,8 +71,7 @@ Send resume and application letter to yassine.mhiri@univ-smb.fr, mickael.dardail
 [^Offringa]: [Compression of interferometric radio-astronomical data, A. R. Offringa](https://arxiv.org/abs/1609.02019)
 [^Corda]: [Reduced-Precision Acceleration of Radio-Astronomical Imaging on Reconfigurable Hardware, S. Corda](https://ieeexplore.ieee.org/document/9709826)
 [^Seznec]: [A Study on Convolution Operator Using Half Precision Floating Point Numbers on GPU for Radioastronomy Deconvolution](https://hal.science/hal-01837982v1)
-[^Monnier]: [Fast Sky to Sky Interpolation for Radio Interferometric
-Imaging](https://hal.science/hal-03725824v1/file/ICIP___Paper.pdf)
+[^Monnier]: [Fast Sky to Sky Interpolation for Radio Interferometric Imaging](https://hal.science/hal-03725824v1/file/ICIP___Paper.pdf)
 [^Arras]: [Efficient wide-field radio interferometry response](https://www.aanda.org/articles/aa/pdf/2021/02/aa39723-20.pdf)
 [^Greengard]: [Accelerating the Nonuniform Fast Fourier Transform∗](https://epubs.siam.org/doi/abs/10.1137/S003614450343200X)
 [^Bester]: [Africanus III. pfb-imaging - a flexible radio interferometric imaging suite](https://arxiv.org/pdf/2412.10073)
