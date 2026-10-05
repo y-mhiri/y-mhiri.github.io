@@ -1,4 +1,3 @@
-# Internship Offer - Master's or 3rd Year Engineering School
 
 ## Exploring Pretext Tasks for Building Statistically Constrained Latent Spaces of SAR Time Series
 
