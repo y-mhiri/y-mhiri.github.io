@@ -33,18 +33,7 @@ Supervised by Pascal Larzabal, co-supervised by Mohammed Nabil El Korso and Arna
 
 ## Open Positions 
 
-### PhD
-
-- [Multimodal SAR-Optical Registration via Learned Covariance and Metrics]({{ site.url }}/phd/these-CNES-LISTIC.pdf) - __*Closed*__
-- [Adaptation de domaines pour la classification de séries temporelles d'images sonar à base de statistiques d'ordre deux]({{ site.url }}/phd/these-exail.pdf) - __*Open*__
-- [Deep Learning for Measuring Surface
-Deformations Using Radar Interferometry
-(InSAR) - Application to the Monitoring of
-Gravitational Instabilities in High Mountains]({{ site.url }}/phd/these-sie.pdf) - __*Open*__
-
 ### Internship 
 
 - [Quantification in radioastronomy imaging]({{ site.url }}/stages/stage-quantification)
-- [Domain Adaptation of Unrolled Neural Network]({{ site.url }}/stages/sujet_stage_da.pdf)
-- [Despeckling of SAR Remote Sensing Images with Unrolled Neural Networks]({{ site.url }}/stages/unrolled_despeckling_internship.pdf)
-
+- [Exploring Pretext Tasks for Building Statistically Constrained Latent Spaces of SAR Time Series]({{ site.url }}/stages/stage-appaloosa)
