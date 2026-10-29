@@ -1,0 +1,73 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+export async function getStaticPaths() {
+  const positions = await getCollection('positions');
+  return positions.map((p) => ({ params: { slug: p.id }, props: { position: p } }));
+}
+
+const { position } = Astro.props;
+const { Content } = await render(position);
+const d = position.data;
+const meta: Array<[string, string | undefined]> = [
+  ['Type', d.type],
+  ['Status', d.status],
+  ['Location', d.location],
+  ['Laboratory', d.laboratory],
+  ['Duration', d.duration],
+  ['Start', d.start],
+  ['Apply before', d.deadline],
+  ['Contact', d.contact],
+].filter(([, v]) => Boolean(v));
+---
+
+<Base title={`${d.title} — Open positions`}>
+  <article>
+    <h1 class="page-title--small">{d.title}</h1>
+    <p>
+      <span class="badge">{d.type}</span>
+      {d.status === 'filled' && <span class="badge badge--muted">filled</span>}
+    </p>
+
+    <dl class="position-meta">
+      {
+        meta.map(([k, v]) => (
+          <div>
+            <dt>{k}</dt>
+            {d.contact && d.contact_url && k === 'Contact' ? (
+              <dd>
+                <a href={d.contact_url}>{v}</a>
+              </dd>
+            ) : (
+              <dd>{v}</dd>
+            )}
+          </div>
+        ))
+      }
+    </dl>
+
+    <Content />
+
+    {d.files.length > 0 && (
+      <section>
+        <h2>Attachments</h2>
+        <ul>
+          {d.files.map((f) => (
+            <li>
+              <a href={f}>{f.split('/').pop()}</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {d.status === 'open' && d.contact_url && (
+      <p class="position-cta">
+        <strong>Interested?</strong> <a href={d.contact_url}>Get in touch</a>.
+      </p>
+    )}
+
+    <p><a href="/positions/">← All positions</a></p>
+  </article>
+</Base>

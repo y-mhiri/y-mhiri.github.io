@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Quantification for radio-astronomy imaging — Open positions</title><meta name="description" content="Personal page of Yassine Mhiri, associate professor at LISTIC, Université Savoie Mont Blanc. Statistical signal and image processing, computational imaging, inverse problems."><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="theme-color" content="#fcfbf8" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#14120e" media="(prefers-color-scheme: dark)"><script>
+          // Apply the saved theme before first paint to avoid a flash.
+          (function () {
+            var t = null;
+            try { t = localStorage.getItem('theme'); } catch (e) {}
+            if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', t);
+          })();
+        </script><link rel="stylesheet" href="/_astro/_slug_.D1b3iXkH.css"></head> <body> <header class="masthead"> <a class="masthead__name" href="/">Yassine Mhiri</a> <nav class="nav" aria-label="Main navigation"> <a href="/publications/"> Publications </a><a href="/teaching/"> Teaching </a><a href="/talks/"> Talks &amp; events </a><a href="/positions/" aria-current="page"> Open positions </a> <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme"> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg> </button> </nav> </header> <main class="page">  <article> <h1 class="page-title--small">Quantification for radio-astronomy imaging</h1> <p> <span class="badge">internship</span>  </p> <dl class="position-meta"> <div> <dt>Type</dt> <dd>internship</dd> </div><div> <dt>Status</dt> <dd>open</dd> </div><div> <dt>Location</dt> <dd>Annecy and Rennes, France</dd> </div><div> <dt>Laboratory</dt> <dd>LISTIC (Annecy) / IETR (Rennes)</dd> </div><div> <dt>Duration</dt> <dd>4 to 6 months</dd> </div><div> <dt>Start</dt> <dd>February 2027</dd> </div><div> <dt>Contact</dt> <dd> <a href="mailto:yassine.mhiri@univ-smb.fr,mickael.dardaillon@insa-rennes.fr">Yassine Mhiri, Mickaël Dardaillon</a> </dd> </div> </dl> <p>Recruit a Master 2 student in electronics or computer science. The aim of this internship is to explore the potential energy and latency benefits of quantification in radio astronomy imaging.</p>
+<p><strong>Keywords:</strong> quantification, radio astronomy, high-performance computing, energy, optimization</p>
+<h2 id="context">Context</h2>
+<p>Radio-interferometers image the sky in the radio domain from the measurements of an array of antennas. The Square Kilometre Array (SKA) involves a large number of antennas and plans to greatly improve the resolution of the reconstructed images. Regarding the data processing pipelines, this new instrument will lead to a data deluge with data rates of multiple terabits per second. To scale to the full potential of the instrument and match sustainability objectives, a set of constraints should be taken into account:</p>
+<ul>
+<li>storage: no data storage, real-time processing</li>
+<li>compute: limited energy for cost and environmental reasons</li>
+</ul>
+<p>In fact, the data size represents one of the main bottlenecks in the imaging pipeline. Computing the dirty image and convolving the PSF with a model image are among the main bottlenecks in imaging pipelines. Existing work in data compression [1] and energy reduction [2] shows that reduced precision can be implemented for those steps. Furthermore, reducing the data size and complexity of those steps can make the implementation of more complex optimization algorithms scalable. However, in more complex imaging pipelines, the reduction in precision can lead to non-negligible artifacts [3, 4].</p>
+<p>This collaborative project between LISTIC in Annecy and IETR in Rennes proposes to look directly at the size of the data transferred and computed, using quantification. To do so, various quantification strategies to reduce the memory footprint in imaging pipelines, and their implementation in imaging algorithms, will be explored.</p>
+<p>First results show that low-precision floating-point is able to perform as well as double precision in terms of signal quality for simple radio-astronomy sky models and imaging pipelines. These results motivate the exploration of more complex sky models and real data, as well as more complex imaging pipelines.</p>
+<h2 id="objectives">Objectives</h2>
+<p>The internship will explore the influence of quantification on different radio astronomy imaging algorithms:</p>
+<ul>
+<li>Evaluate algorithms with more complex sky models and real data.</li>
+<li>Implement modern imaging pipelines, evaluating them with mixed precision in terms of signal quality, and developing new energy cost models.</li>
+<li>Quantify the influence of mixed precision on the convergence of optimization-based imaging algorithms [4].</li>
+</ul>
+<p>The overall objective is to explore the Pareto frontier, looking for new trade-offs between energy, accuracy, memory and latency.</p>
+<h2 id="skills">Skills</h2>
+<p><strong>Essential</strong></p>
+<ul>
+<li>Development in Python</li>
+<li>Integration with bash, git</li>
+</ul>
+<p><strong>Desirable</strong></p>
+<ul>
+<li>Development in a high-performance computing environment</li>
+<li>Signal and image processing, radio astronomy algorithms</li>
+</ul>
+<h2 id="characteristics">Characteristics</h2>
+<ul>
+<li><strong>Duration:</strong> 4 to 6 months</li>
+<li><strong>Start:</strong> February 2027</li>
+<li><strong>Stipend:</strong> 669,90 € / month</li>
+<li><strong>Funded by:</strong> <a href="https://eclat-lab.fr/">Laboratoire ECLAT</a></li>
+</ul>
+<h2 id="location">Location</h2>
+<p>The project will take place between Annecy (LISTIC) and Rennes (IETR), with mobility between the laboratories as well as possible collaborations within the ECLAT laboratory.</p>
+<h2 id="supervisors">Supervisors</h2>
+<ul>
+<li><a href="https://y-mhiri.github.io/">Yassine Mhiri</a>, LISTIC, Annecy</li>
+<li><a href="https://dardarel.github.io/">Mickaël Dardaillon</a>, IETR, Rennes</li>
+</ul>
+<h2 id="applications">Applications</h2>
+<p>Send a resume and application letter to <a href="mailto:yassine.mhiri@univ-smb.fr">yassine.mhiri@univ-smb.fr</a> and <a href="mailto:mickael.dardaillon@insa-rennes.fr">mickael.dardaillon@insa-rennes.fr</a>.</p>
+<h2 id="references">References</h2>
+<ol>
+<li>A. R. Offringa, <em>Compression of interferometric radio-astronomical data</em>. <a href="https://arxiv.org/abs/1609.02019">[arXiv:1609.02019]</a></li>
+<li>S. Corda, <em>Reduced-Precision Acceleration of Radio-Astronomical Imaging on Reconfigurable Hardware</em>. <a href="https://ieeexplore.ieee.org/document/9709826">[IEEE]</a></li>
+<li><em>A Study on Convolution Operator Using Half Precision Floating Point Numbers on GPU for Radioastronomy Deconvolution</em>. <a href="https://hal.science/hal-01837982v1">[HAL]</a></li>
+<li>H. L. Bester et al., <em>Africanus III. pfb-imaging — a flexible radio interferometric imaging suite</em>. <a href="https://arxiv.org/abs/2412.10073">[arXiv:2412.10073]</a></li>
+</ol>  <p class="position-cta"> <strong>Interested?</strong> <a href="mailto:yassine.mhiri@univ-smb.fr,mickael.dardaillon@insa-rennes.fr">Get in touch</a>.
+</p> <p><a href="/positions/">← All positions</a></p> </article>  </main> <footer class="site-footer"> <a href="https://www.univ-smb.fr/listic/"> <img class="site-footer__listic" src="/images/logos/listic.png" alt="LISTIC" width="94" height="40"> </a> <a href="https://www.univ-smb.fr/"> <img class="site-footer__usmb" src="/images/logos/usmb.svg" alt="Université Savoie Mont Blanc" width="81" height="30"> </a> <span>© 2026 Yassine Mhiri</span> </footer> <script type="module">const e=document.getElementById("theme-toggle");function a(){const t=document.documentElement.getAttribute("data-theme")==="dark";e.setAttribute("aria-label",t?"Switch to light theme":"Switch to dark theme"),e.title=e.getAttribute("aria-label")}e.addEventListener("click",()=>{const t=document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark";document.documentElement.setAttribute("data-theme",t);try{localStorage.setItem("theme",t)}catch{}a()});a();</script> </body> </html>

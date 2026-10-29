@@ -1,0 +1,108 @@
+---
+import '../styles/global.css';
+import Icon from '../components/Icon.astro';
+import { config } from '../lib/config';
+import { getCollection } from 'astro:content';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = config.site.description } = Astro.props;
+
+// Fixed navigation entries from config.yaml, plus one entry per content
+// page (teaching.md, ...) that does not set `nav: false`.
+const contentPages = (await getCollection('pages'))
+  .filter((p) => p.data.nav !== false)
+  .map((p) => ({ title: p.data.nav_title ?? p.data.title, url: `/${p.id}/` }));
+
+const nav = [...config.navigation, ...contentPages.filter((p) => !config.navigation.some((n) => n.url === p.url))];
+
+const currentPath = Astro.url.pathname.replace(/\/index\.html$/, '/');
+const isCurrent = (url: string) => currentPath.startsWith(url.replace(/\/$/, ''));
+
+const darkMode = config.dark_mode.enabled;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#fcfbf8" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#14120e" media="(prefers-color-scheme: dark)" />
+    <slot name="head" />
+    {
+      darkMode && (
+        <script is:inline>
+          // Apply the saved theme before first paint to avoid a flash.
+          (function () {
+            var t = null;
+            try { t = localStorage.getItem('theme'); } catch (e) {}
+            if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', t);
+          })();
+        </script>
+      )
+    }
+  </head>
+  <body>
+    <header class="masthead">
+      <a class="masthead__name" href="/">{config.profile.name}</a>
+      <nav class="nav" aria-label="Main navigation">
+        {
+          nav.map((item) => (
+            <a href={item.url} aria-current={isCurrent(item.url) ? 'page' : undefined}>
+              {item.title}
+            </a>
+          ))
+        }
+        {
+          darkMode && (
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme">
+              <Icon name="moon" size={14} />
+            </button>
+          )
+        }
+      </nav>
+    </header>
+
+    <main class="page">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <a href="https://www.univ-smb.fr/listic/">
+        <img class="site-footer__listic" src="/images/logos/listic.png" alt="LISTIC" width="94" height="40" />
+      </a>
+      <a href="https://www.univ-smb.fr/">
+        <img class="site-footer__usmb" src="/images/logos/usmb.svg" alt="Université Savoie Mont Blanc" width="81" height="30" />
+      </a>
+      <span>© {new Date().getFullYear()} {config.profile.name}</span>
+    </footer>
+
+    {
+      darkMode && (
+        <script>
+          const btn = document.getElementById('theme-toggle')!;
+          function refresh() {
+            const dark = document.documentElement.getAttribute('data-theme') === 'dark';
+            btn.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+            btn.title = btn.getAttribute('aria-label')!;
+          }
+          btn.addEventListener('click', () => {
+            const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            try { localStorage.setItem('theme', next); } catch (e) {}
+            refresh();
+          });
+          refresh();
+        </script>
+      )
+    }
+  </body>
+</html>

@@ -1,0 +1,50 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getPublications, bibtexOf, venueOf, emphasizedAuthors } from '../../lib/publications';
+import { config } from '../../lib/config';
+
+export function getStaticPaths() {
+  return getPublications().map((pub) => ({ params: { id: pub.id }, props: { pub } }));
+}
+
+const { pub } = Astro.props;
+const bibtex = bibtexOf(pub);
+const venue = venueOf(pub);
+---
+
+<Base title={`${pub.title} — ${config.profile.name}`}>
+  <Fragment slot="head">
+    {/* Google Scholar indexing tags (Highwire Press format) */}
+    <meta name="citation_title" content={pub.title} />
+    {pub.authors.map((a) => <meta name="citation_author" content={a} />)}
+    <meta name="citation_publication_date" content={String(pub.year)} />
+    {pub.journal && <meta name="citation_journal_title" content={pub.journal} />}
+    {pub.conference && <meta name="citation_conference_title" content={pub.conference} />}
+    {pub.doi && <meta name="citation_doi" content={pub.doi} />}
+    {pub.pdf && <meta name="citation_pdf_url" content={pub.pdf} />}
+  </Fragment>
+  <article>
+    <h1 class="page-title--small">{pub.title}</h1>
+    <p class="pub-authors" set:html={emphasizedAuthors(pub)} />
+    {venue && <p class="pub-venue">{venue}, {pub.year}</p>}
+    <p class="pub-links pub-links--spaced">
+      {pub.doi && <a href={`https://doi.org/${pub.doi}`}>DOI</a>}
+      {pub.pdf && <a class="pub-links__pdf" href={pub.pdf}>PDF</a>}
+      {pub.halUrl && <a href={pub.halUrl}>HAL</a>}
+    </p>
+
+    {pub.abstract && (
+      <section>
+        <h2>Abstract</h2>
+        <p>{pub.abstract}</p>
+      </section>
+    )}
+
+    <section>
+      <h2>BibTeX</h2>
+      <pre><code>{bibtex}</code></pre>
+    </section>
+
+    <p><a href="/publications/">← All publications</a></p>
+  </article>
+</Base>

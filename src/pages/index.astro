@@ -1,0 +1,85 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PubItem from '../components/PubItem.astro';
+import { config } from '../lib/config';
+import { getPublications } from '../lib/publications';
+
+// The homepage is a list of sections, in the order of config.yaml
+// (home.sections). "publications" and "positions" are generated; any
+// other name is the markdown file src/content/home/<name>.md.
+const homeFiles = await getCollection('home');
+
+const sections = await Promise.all(
+  config.home.sections.map(async (name) => {
+    if (name === 'publications' || name === 'positions') return { name };
+    const file = homeFiles.find((f) => f.id === name);
+    if (!file) throw new Error(`config.yaml lists home section "${name}" but src/content/home/${name}.md does not exist`);
+    const { Content } = await render(file);
+    return { name, title: file.data.title, Content };
+  }),
+);
+
+const recentPubs = getPublications().slice(0, config.home.recent_publications);
+
+const openPositions = (await getCollection('positions'))
+  .filter((p) => p.data.status === 'open')
+  .sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+const { profile, links } = config;
+---
+
+<Base title={profile.name}>
+  <div class="profile">
+    <img class="profile__photo" src={profile.photo} alt={`Photo of ${profile.name}`} width="120" height="120" />
+    <div>
+      <h1 class="profile__name">{profile.name}</h1>
+      <p class="profile__role">{profile.role}, {profile.affiliation}</p>
+      {profile.address?.length ? (
+        <address class="profile__address">
+          {profile.address.map((line) => <span>{line}</span>)}
+        </address>
+      ) : null}
+      <p class="profile__links">
+        {links.map((l) => <a href={l.url} rel="me">{l.label}</a>)}
+      </p>
+    </div>
+  </div>
+
+  {
+    sections.map((s) => {
+      if (s.name === 'publications') {
+        return (
+          <section id="publications">
+            <h2>Recent publications</h2>
+            <ul class="pub-list">
+              {recentPubs.map((pub) => <PubItem pub={pub} />)}
+            </ul>
+            <p class="section-more"><a href="/publications/">All publications →</a></p>
+          </section>
+        );
+      }
+      if (s.name === 'positions') {
+        return openPositions.length > 0 && (
+          <section id="positions">
+            <h2>Open positions</h2>
+            <ul class="position-list">
+              {openPositions.map((p) => (
+                <li>
+                  <a href={`/positions/${p.id}/`}>{p.data.title}</a> <span class="badge">{p.data.type}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        );
+      }
+      const { Content } = s;
+      return (
+        <section id={s.name}>
+          {s.title && <h2>{s.title}</h2>}
+          {Content && <Content />}
+        </section>
+      );
+    })
+  }
+</Base>

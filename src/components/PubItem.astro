@@ -1,0 +1,36 @@
+---
+import { venueOf, emphasizedAuthors, type Publication } from '../lib/publications';
+
+interface Props {
+  pub: Publication;
+  category?: string;
+}
+
+const { pub, category } = Astro.props;
+const venue = venueOf(pub);
+---
+
+<li
+  class="pub-item"
+  data-category={category}
+  data-year={pub.year}
+  data-title={pub.title.toLowerCase()}
+  data-authors={pub.authors.join(', ').toLowerCase()}
+>
+  <span class="pub-year">{pub.year}</span>
+  <div class="pub-body">
+    <p class="pub-title">
+      <a href={`/publications/${pub.id}/`}>{pub.title}</a>
+    </p>
+    <p class="pub-authors" set:html={emphasizedAuthors(pub)} />
+    <p class="pub-meta">
+      {venue && <span class="pub-venue">{venue}</span>}
+      <span class="pub-links">
+        {pub.doi && <a href={`https://doi.org/${pub.doi}`}>DOI</a>}
+        {pub.pdf && <a class="pub-links__pdf" href={pub.pdf}>PDF</a>}
+        {pub.halUrl && <a href={pub.halUrl}>HAL</a>}
+        <a href={`/publications/${pub.id}/`}>BibTeX</a>
+      </span>
+    </p>
+  </div>
+</li>

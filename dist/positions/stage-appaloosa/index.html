@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Exploring Pretext Tasks for Building Statistically Constrained Latent Spaces of SAR Time Series — Open positions</title><meta name="description" content="Personal page of Yassine Mhiri, associate professor at LISTIC, Université Savoie Mont Blanc. Statistical signal and image processing, computational imaging, inverse problems."><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="theme-color" content="#fcfbf8" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#14120e" media="(prefers-color-scheme: dark)"><script>
+          // Apply the saved theme before first paint to avoid a flash.
+          (function () {
+            var t = null;
+            try { t = localStorage.getItem('theme'); } catch (e) {}
+            if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', t);
+          })();
+        </script><link rel="stylesheet" href="/_astro/_slug_.D1b3iXkH.css"></head> <body> <header class="masthead"> <a class="masthead__name" href="/">Yassine Mhiri</a> <nav class="nav" aria-label="Main navigation"> <a href="/publications/"> Publications </a><a href="/teaching/"> Teaching </a><a href="/talks/"> Talks &amp; events </a><a href="/positions/" aria-current="page"> Open positions </a> <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme"> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg> </button> </nav> </header> <main class="page">  <article> <h1 class="page-title--small">Exploring Pretext Tasks for Building Statistically Constrained Latent Spaces of SAR Time Series</h1> <p> <span class="badge">internship</span>  </p> <dl class="position-meta"> <div> <dt>Type</dt> <dd>internship</dd> </div><div> <dt>Status</dt> <dd>open</dd> </div><div> <dt>Location</dt> <dd>Strasbourg (Illkirch-Graffenstaden), France</dd> </div><div> <dt>Laboratory</dt> <dd>ICube (UMR 7357, Université de Strasbourg / CNRS)</dd> </div><div> <dt>Duration</dt> <dd>6 months, starting March 2027</dd> </div><div> <dt>Contact</dt> <dd>Antoine Bralet, Matthieu Gallet, Yassine Mhiri</dd> </div> </dl> <p><em>Self-supervised learning with robust statistical priors</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>Level</strong></td><td>Bachelor+5 (Master’s 2 or 3rd Year Engineering School)</td></tr><tr><td><strong>Duration</strong></td><td>6 months, starting March 2027</td></tr><tr><td><strong>City, Country</strong></td><td>Strasbourg (Illkirch-Graffenstaden), France</td></tr><tr><td><strong>Laboratory</strong></td><td><a href="https://icube.unistra.fr/">ICube -Engineering Science, Computer Science and Imaging Laboratory (UMR 7357, Université de Strasbourg / CNRS)</a></td></tr><tr><td><strong>Collaborations</strong></td><td>Exchanges with <a href="https://www.univ-smb.fr/listic/">LISTIC</a> Annecy (M. Gallet, Y. Mhiri) within the GDR IASIS exploratory project APPALOOSA.</td></tr></tbody></table>
+<h2 id="context">Context</h2>
+<p>Satellite Image Time Series (SITS) acquired by Synthetic Aperture Radar (SAR), such as Sentinel-1, allow monitoring of the Earth’s surface day and night, independently of cloud cover. They are now routinely used for environmental monitoring, such as wet snow and cryosphere mapping [1] or detection of slow-moving landslides from interferograms [2].</p>
+<p>Since Sentinel-1 continuously acquires images over the world and returns to its starting point within 6 days, it produces a huge quantity of data that can be studied both temporally and spatially. Such an abundance of data can be exploited to train deep neural networks and ensure strong generalization of their performance. However, to ensure such performance, deep networks require labeled data, which in practice is rarely available since expert annotations are costly in both time and resources.</p>
+<p><strong>Self-supervised learning</strong> addresses this issue by training an encoder to project the data into a generalizable <em>latent space</em>. This latent space is then reused <em>a posteriori</em> as input to an additional lightweight head, trained with only a few samples to address any downstream task. In the literature, two main strategies can be applied for self-supervised training: constraining the latent space via contrastive learning [3] and/or training the network to solve a <strong>label-free pretext task</strong>. While current works in the host laboratories focus on contrastive learning applied to the latent space, this internship focuses on pretext tasks.</p>
+<p>Various pretext tasks have been used in the literature, such as spatial, temporal or spatio-temporal masked autoencoders [4, 5, 6], as well as image denoising [7]. In practice, most representation learning approaches combine several strategies to build a robust, generalizable and exploitable latent space [8].</p>
+<p>These pretext tasks were, however, designed for optical images or Gaussian-like signals, and are poorly suited to SAR. SAR intensities are corrupted by multiplicative, strongly <strong>non-Gaussian</strong> speckle and are better described by heavy-tailed distributions (Rayleigh, Weibull, compound-Gaussian / elliptical models) [9, 10]. The acquisition geometry (layover, shadow, foreshortening in mountainous areas) and the parameters of each acquisition further shape the signal [11]. Standard augmentations (jittering, additive noise, color changes) or Euclidean ℓ₂ reconstruction losses may thus produce latent spaces that are neither physically meaningful nor robust.</p>
+<h2 id="internship-topic">Internship Topic</h2>
+<p>The goal of the internship is to <strong>build latent spaces that make sense with respect to the statistical nature of SAR time series</strong>. To this end, the intern will design pretext tasks and losses that embed statistical priors. Two complementary levels will be explored:</p>
+<ol>
+<li><strong>Adapted pretext tasks</strong>, where augmentations respect SAR physics (speckle resampling, temporal resampling [3], geometry-aware masking) and where similarity or reconstruction losses rely on divergences between distributions (Kullback–Leibler, Rényi [13], geometric losses [14], or temporal alignment measures such as soft-DTW [15]) rather than Euclidean distances.</li>
+<li><strong>Statistically constrained representations</strong>, where the latent space (or part of it) is tied to the parameters of a robust statistical model of the data (e.g. scale/texture parameters of compound-Gaussian distributions, covariance matrices living on a Riemannian manifold [10, 12]).</li>
+</ol>
+<p>The expected outcome is a comparison of these strategies on SAR time series, evaluated on downstream tasks with few labels (linear probing on classification / detection), in terms of performance, robustness and interpretability of the latent space.</p>
+<h2 id="internship-schedule">Internship Schedule</h2>
+<p>The recruited student will implement standard pretext tasks (masked autoencoding, denoising, super-resolution) on SAR time series and contribute to the definition of an evaluation protocol for the trained models (linear probing, few-label regime). After this first round of experiments, they will help design SAR-consistent image augmentations and pretext tasks, notably through losses based on divergences between robust distributions, and study their differentiability and numerical stability.</p>
+<p>Depending on progress, the results may be published (GRETSI, IGARSS, ICASSP). From a research perspective, the intern could also extend the proposed pretext tasks by combining them with latent-space contrastive strategies [8]. In particular, the intern could develop a method to constrain the construction of the latent space using statistical priors dedicated to SAR images.</p>
+<p>The internship may be a first step toward a PhD on the topic.</p>
+<h2 id="required-skills">Required Skills</h2>
+<ul>
+<li><strong>Computing:</strong> Python, PyTorch; taste for numerical experimentation and GPU computation.</li>
+<li><strong>Learning:</strong> fundamentals of deep learning.</li>
+<li><strong>Signal &#x26; imaging:</strong> signal and image processing, statistics.</li>
+<li><strong>Appreciated (not required):</strong> SAR/InSAR imaging.</li>
+</ul>
+<h2 id="practical-information">Practical Information</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>Stipend</strong></td><td>According to applicable regulations</td></tr><tr><td><strong>Contact</strong></td><td>Antoine Bralet: <a href="mailto:abralet@unistra.fr">abralet@unistra.fr</a><br>Matthieu Gallet: <a href="mailto:matthieu.gallet@univ-smb.fr">matthieu.gallet@univ-smb.fr</a><br>Yassine Mhiri: <a href="mailto:yassine.mhiri@univ-smb.fr">yassine.mhiri@univ-smb.fr</a></td></tr></tbody></table>
+<h2 id="references">References</h2>
+<ol>
+<li>M. Gallet, A. Atto, F. Karbou, E. Trouvé, <em>Wet snow detection from satellite SAR images by machine learning with physical snowpack model labeling</em>, IEEE JSTARS, 2024.</li>
+<li>A. Bralet, E. Trouvé, J. Chanussot, A. M. Atto, <em>ISSLIDE: A new InSAR dataset for slow sliding area detection with machine learning</em>, IEEE GRSL, 2024. <a href="https://doi.org/10.1109/LGRS.2024.3365299">[DOI]</a></li>
+<li>A. Saget et al., <em>Resampling augmentation for time series contrastive learning: application to remote sensing</em>, 2025. <a href="https://arxiv.org/abs/2506.18587">[arXiv:2506.18587]</a></li>
+<li>Y. Gandelsman, Y. Sun, X. Chen, A. Efros, <em>Test-time training with masked autoencoders</em>, NeurIPS 2022.</li>
+<li>Y. Yuan, L. Lin, Q. Liu, R. Hang, Z. G. Zhou, <em>SITS-Former: A pre-trained spatio-spectral-temporal representation model for Sentinel-2 time series classification</em>, IJAEO, 2022.</li>
+<li>Y. Cong, S. Khanna, C. Meng, P. Liu, E. Rozi, Y. He, et al., <em>SatMAE: Pre-training transformers for temporal and multi-spectral satellite imagery</em>, NeurIPS 2022.</li>
+<li>E. Dalsasso, L. Denis, F. Tupin, <em>As if by magic: Self-supervised training of deep despeckling networks with MERLIN</em>, IEEE TGRS, 2021.</li>
+<li>I. Dumeur, S. Valero, J. Inglada, <em>Paving the way toward foundation models for irregular and unaligned satellite image time series</em>, 2024. <a href="https://arxiv.org/abs/2407.08448">[arXiv:2407.08448]</a></li>
+<li>D.-X. Yue, F. Xu, A. C. Frery, Y.-Q. Jin, <em>Synthetic aperture radar image statistical modeling: Part one -single-pixel statistical models</em>, IEEE GRSM, 2021. <a href="https://doi.org/10.1109/MGRS.2020.3004508">[DOI]</a></li>
+<li>E. Ollila, D. E. Tyler, V. Koivunen, H. V. Poor, <em>Complex elliptically symmetric distributions: survey, new results and applications</em>, IEEE TSP, 2012.</li>
+<li>J. Prexl, M. Recla, M. Schmitt, <em>SARFormer -An acquisition parameter aware vision transformer for synthetic aperture radar data</em>, CVPR Workshops, 2025.</li>
+<li>A. Collas, A. Breloy, C. Ren, G. Ginolhac, J.-P. Ovarlez, <em>Riemannian optimization for non-centered mixture of scaled Gaussian distributions</em>, IEEE TSP, 2023. <a href="https://doi.org/10.1109/TSP.2023.3290354">[DOI]</a></li>
+<li>M. Gallet, A. Mian, A. Atto, <em>Rényi divergences learning for explainable classification of SAR image pairs</em>, ICASSP 2024.</li>
+<li>A. Mensch, M. Blondel, G. Peyré, <em>Geometric losses for distributional learning</em>, ICML 2019.</li>
+<li>M. Cuturi, M. Blondel, <em>Soft-DTW: a differentiable loss function for time-series</em>, ICML 2017.</li>
+</ol>   <p><a href="/positions/">← All positions</a></p> </article>  </main> <footer class="site-footer"> <a href="https://www.univ-smb.fr/listic/"> <img class="site-footer__listic" src="/images/logos/listic.png" alt="LISTIC" width="94" height="40"> </a> <a href="https://www.univ-smb.fr/"> <img class="site-footer__usmb" src="/images/logos/usmb.svg" alt="Université Savoie Mont Blanc" width="81" height="30"> </a> <span>© 2026 Yassine Mhiri</span> </footer> <script type="module">const e=document.getElementById("theme-toggle");function a(){const t=document.documentElement.getAttribute("data-theme")==="dark";e.setAttribute("aria-label",t?"Switch to light theme":"Switch to dark theme"),e.title=e.getAttribute("aria-label")}e.addEventListener("click",()=>{const t=document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark";document.documentElement.setAttribute("data-theme",t);try{localStorage.setItem("theme",t)}catch{}a()});a();</script> </body> </html>

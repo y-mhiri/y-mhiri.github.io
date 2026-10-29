@@ -1,0 +1,20 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { config } from '../lib/config';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages');
+  return pages.map((p) => ({ params: { slug: p.id }, props: { page: p } }));
+}
+
+const { page } = Astro.props;
+const { Content } = await render(page);
+---
+
+<Base title={`${page.data.title} — ${config.profile.name}`}>
+  <article id={page.id}>
+    <h1>{page.data.title}</h1>
+    <Content />
+  </article>
+</Base>

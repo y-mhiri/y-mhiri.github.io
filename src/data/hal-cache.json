@@ -1,0 +1,293 @@
+{
+  "fetched_at": "2026-10-29T13:53:34.946Z",
+  "source": "https://api.archives-ouvertes.fr/search/?q=authFullName_t%3A%22Yassine%20Mhiri%22&wt=json&rows=200&sort=publicationDateY_i%20desc&fl=docid,halId_s,title_s,authFullName_s,docType_s,publicationDateY_i,journalTitle_s,conferenceTitle_s,bookTitle_s,volume_s,page_s,issue_s,publisher_s,doiId_s,uri_s,fileMain_s,schoolName_s,defenceDateY_i,label_s,abstract_s",
+  "docs": [
+    {
+      "docid": "5529554",
+      "label_s": "Matthieu Gallet, Yassine Mhiri. A Statistical Soft-DTW Similarity Based on the Wasserstein Distance. 2026. &#x27E8;hal-05529554&#x27E9;",
+      "title_s": [
+        "A Statistical Soft-DTW Similarity Based on the Wasserstein Distance"
+      ],
+      "abstract_s": [
+        "We propose a new statistical soft-dtw similarity, namely the Wasserstein with Statistical Prior for Soft-DTW (WaSPS-DTW). Given a statistical model, the WaSPS-DTW computes a similarity from samples of a time series by leveraging the squared 2-Wasserstein distance between the thought probability distributions. We show that the WaSPS can be computed in a forward pass without adding much complexity to the original dynamic programming recursion. Furthermore, to integrate the WaSPS in optimization based scheme, we bring together the necessary tools to derive a backward recursion for differentiation of the proposed similarity. We consider the family of Weibull distribution and derive the aformentioned framework for a generic Weibull pdf from which we explicit the case of the exponential distribution. Finally, we apply the newly proposed metric to a classification task on a river discharge datasets modeled by an exponential distribution. The proposed similarity shows significant improvements compared to standard DTW discrepancy in performance qualitatively and quantitatively by almost ∼ 12%."
+      ],
+      "authFullName_s": [
+        "Matthieu Gallet",
+        "Yassine Mhiri"
+      ],
+      "halId_s": "hal-05529554",
+      "uri_s": "https://hal.science/hal-05529554v1",
+      "docType_s": "UNDEFINED",
+      "publicationDateY_i": 2026,
+      "fileMain_s": "https://hal.science/hal-05529554/document"
+    },
+    {
+      "docid": "5371657",
+      "label_s": "Nawel Arab, Yassine Mhiri, Isabelle Vin, Mohammed Nabil El Korso, Pascal Larzabal. Unrolled expectation maximization algorithm for radio interferometric imaging in presence of non gaussian interferences. Signal Processing, 2025, &#x27E8;10.1016/j.sigpro.2025.110035&#x27E9;. &#x27E8;hal-04966761v2&#x27E9;",
+      "title_s": [
+        "Unrolled expectation maximization algorithm for radio interferometric imaging in presence of non gaussian interferences"
+      ],
+      "abstract_s": [
+        "<div><p>This paper proposes an unrolled Expectation Maximization (EM) algorithm tailored for robust radio interferometric imaging in presence of non gaussian radio interferences. We introduce a compound Gaussian model for the observation noise and derive an unrolled neural architecture based on the EM algorithm to tackle the reconstruction problem in a robust manner. This innovative approach aims to enhance image reconstruction by simultaneously incorporating model information and generalization for the case of non-gaussian heavy-tailed noise distribution, while leveraging the benefits of deep learning. Our experiments demonstrate significant improvements over state-of-the-art methods, highlighting the efficacy of our proposed scheme in handling the complexities of radiofrequency interference and improving image reconstruction accuracy.</p></div>"
+      ],
+      "journalTitle_s": "Signal Processing",
+      "authFullName_s": [
+        "Nawel Arab",
+        "Yassine Mhiri",
+        "Isabelle Vin",
+        "Mohammed Nabil El Korso",
+        "Pascal Larzabal"
+      ],
+      "halId_s": "hal-04966761",
+      "uri_s": "https://hal.science/hal-04966761v2",
+      "docType_s": "ART",
+      "doiId_s": "10.1016/j.sigpro.2025.110035",
+      "publicationDateY_i": 2025,
+      "fileMain_s": "https://hal.science/hal-04966761/document"
+    },
+    {
+      "docid": "4913110",
+      "label_s": "Yassine Mhiri, Rémy Abergel, Andrés Almansa, Lionel Moisan. Hyperspectral signal reconstruction from interferometric measurements with enriched Fourier bases. 2024 32nd European Signal Processing Conference (EUSIPCO), Aug 2024, Lyon, France. pp.2192-2196, &#x27E8;10.23919/EUSIPCO63174.2024.10715127&#x27E9;. &#x27E8;hal-04506638v2&#x27E9;",
+      "title_s": [
+        "Hyperspectral signal reconstruction from interferometric measurements with enriched Fourier bases"
+      ],
+      "abstract_s": [
+        "Fourier Transform Spectrometers are instruments that measure the spectral distribution of an electromagnetic signal. They are based on the principle of interferometry, which leverages interference patterns to reconstruct high-resolution observations by solving an inverse problem defined on a continuous domain. The forward model is a linear integral operator, which is, in most cases, discretized by considering a uniform grid and associated Riemann sums to estimate integrals. This approximation introduces an important reconstruction error, which can be significantly reduced by using instead appropriate bases of functions to represent the signal of interest. In this paper, we show the judiciousness of the Fourier basis for this problem, and highlight through numerical experiments the gain it brings in terms of reconstruction precision, compared to the classical use of discrete samples. We finally propose a new basis obtained by enriching the Fourier basis with an affine component, which allows us to overcome the inherent difficulty of representing non-periodic functions with a finite number of sine functions. We show that this new basis leads to another significant improvement of the reconstruction error."
+      ],
+      "conferenceTitle_s": "2024 32nd European Signal Processing Conference (EUSIPCO)",
+      "authFullName_s": [
+        "Yassine Mhiri",
+        "Rémy Abergel",
+        "Andrés Almansa",
+        "Lionel Moisan"
+      ],
+      "halId_s": "hal-04506638",
+      "uri_s": "https://hal.science/hal-04506638v2",
+      "docType_s": "COMM",
+      "page_s": "2192-2196",
+      "publisher_s": [
+        "IEEE"
+      ],
+      "doiId_s": "10.23919/EUSIPCO63174.2024.10715127",
+      "publicationDateY_i": 2024,
+      "fileMain_s": "https://hal.science/hal-04506638/document"
+    },
+    {
+      "docid": "5136860",
+      "label_s": "Nawel Arab, Yassine Mhiri, Isabelle Vin, Mohammed Nabil El Korso, Pascal Larzabal. Unrolled Expectation Maximization for Sparse Radio Interferometric Imaging. 32nd European Signal Processing Conference (EUSIPCO), Aug 2024, Lyon, France. pp.2197-2201, &#x27E8;10.23919/EUSIPCO63174.2024.10715472&#x27E9;. &#x27E8;hal-05136860&#x27E9;",
+      "title_s": [
+        "Unrolled Expectation Maximization for Sparse Radio Interferometric Imaging"
+      ],
+      "abstract_s": [
+        "<div><p>This paper introduces an unrolled Expectation Maximization (EM) algorithm for sparse image reconstruction from radio interferometric measurements in the presence of a compound Gaussian distribution noise. Traditional model-based reconstruction methods, rooted in inference and optimization fields, provide an initial foundation with theoretical guarantees, but their performance is highly linked to the model accuracy and the choice of hyperparameter values. The popularity of supervised machine learning rose over the last decade, yet they faced hurdles related to interpretability and theoretical foundations. The emergence of unrolled algorithms addresses these limitations by combining the strengths of both approaches. We specifically focus on unrolling a regularized EM algorithm as a feedforward neural network with a residual connection. Experimental results showcase improvements over the iterative EM version.</p></div>"
+      ],
+      "conferenceTitle_s": "32nd European Signal Processing Conference (EUSIPCO)",
+      "authFullName_s": [
+        "Nawel Arab",
+        "Yassine Mhiri",
+        "Isabelle Vin",
+        "Mohammed Nabil El Korso",
+        "Pascal Larzabal"
+      ],
+      "halId_s": "hal-05136860",
+      "uri_s": "https://hal.science/hal-05136860v1",
+      "docType_s": "COMM",
+      "page_s": "2197-2201",
+      "publisher_s": [
+        "IEEE"
+      ],
+      "doiId_s": "10.23919/EUSIPCO63174.2024.10715472",
+      "publicationDateY_i": 2024,
+      "fileMain_s": "https://hal.science/hal-05136860/document"
+    },
+    {
+      "docid": "4465053",
+      "label_s": "Yassine Mhiri, Mohammed Nabil El Korso, Arnaud Breloy, Pascal Larzabal. Regularized maximum likelihood estimation for radio interferometric imaging in the presence of radiofrequency interefences. Signal Processing, 2024, 220, pp.109430. &#x27E8;10.1016/j.sigpro.2024.109430&#x27E9;. &#x27E8;hal-04465053&#x27E9;",
+      "title_s": [
+        "Regularized maximum likelihood estimation for radio interferometric imaging in the presence of radiofrequency interefences"
+      ],
+      "abstract_s": [
+        "We consider a regularized Maximum Likelihood Estimation (MLE) framework to produce images in the context of radio interferometric measurements. Specifically, we consider the class of compound Gaussian distributions to model the additive noise in the presence of radiofrequency interferences. In most cases, direct maximization of the likelihood is not tractable. To overcome this issue, we propose a generic expectation-maximization (EM) algorithm in the presence of a compound Gaussian noise. In addition, we leverage an approximation of the forward radio interferometric operator to derive an original latent data space that allows the use of the FFT in the maximization step, leading to an accelerated extension of the proposed imaging algorithm. The proposed approaches are evaluated on simulated and real data and show a significant improvement in the robustness to the presence of radiofrequency interferences (RFI) in the measurement."
+      ],
+      "journalTitle_s": "Signal Processing",
+      "authFullName_s": [
+        "Yassine Mhiri",
+        "Mohammed Nabil El Korso",
+        "Arnaud Breloy",
+        "Pascal Larzabal"
+      ],
+      "halId_s": "hal-04465053",
+      "uri_s": "https://hal.science/hal-04465053v1",
+      "docType_s": "ART",
+      "page_s": "109430",
+      "volume_s": "220",
+      "doiId_s": "10.1016/j.sigpro.2024.109430",
+      "publicationDateY_i": 2024,
+      "fileMain_s": "https://hal.science/hal-04465053/document"
+    },
+    {
+      "docid": "4399112",
+      "label_s": "Jianhua Wang, Lucien Bacharach, Yassine Mhiri, Mohammed Nabil EL KORSO, Pascal Larzabal. Borne Barankin vs Borne Cramér-Rao pour la géométrie de réseaux d'antennes en radioastronomie. GRETSI 2023. XXIXème Colloque Francophone de Traitement du Signal et des Images, Aug 2023, Grenoble, France. &#x27E8;hal-04399112&#x27E9;",
+      "title_s": [
+        "Borne Barankin vs Borne Cramér-Rao pour la géométrie de réseaux d'antennes en radioastronomie"
+      ],
+      "abstract_s": [
+        "Dans cet article, nous proposons l'utilisation de la borne de Barankin (BB) comme critère d'optimisation de la géométrie d'un réseau d'antennes au lieu de la borne de Cramér-Rao (BCR) qui n'est valable que dans la région asymptotique. La BB fournit un compromis en erreur quadratique moyenne (EQM) entre la largeur du lobe principal et les niveaux des lobes secondaires du diagramme de rayonnement. L'EQM considérée est adaptée au contexte de l'imagerie dans le domaine de la radioastronomie. Nous évaluons et comparons les performances des géométries d'antennes obtenues en évaluant la couverture u-v, le niveau de lobes secondaires et la qualité des images. Les résultats de simulation montrent que le critère basé sur la BB est plus approprié que celui basé sur la BCR pour l'imagerie en radioastronomie."
+      ],
+      "conferenceTitle_s": "GRETSI 2023. XXIXème Colloque Francophone de Traitement du Signal et des Images",
+      "authFullName_s": [
+        "Jianhua Wang",
+        "Lucien Bacharach",
+        "Yassine Mhiri",
+        "Mohammed Nabil EL KORSO",
+        "Pascal Larzabal"
+      ],
+      "halId_s": "hal-04399112",
+      "uri_s": "https://hal.science/hal-04399112v1",
+      "docType_s": "COMM",
+      "publicationDateY_i": 2023,
+      "fileMain_s": "https://hal.science/hal-04399112/document"
+    },
+    {
+      "docid": "4399108",
+      "label_s": "Yassine Mhiri, Mohammed Nabil EL KORSO, Arnaud Breloy, Pascal Larzabal. Imagerie radio-interférométrique robuste par dépliement neuronal. GRETSI 2023. XXIXème Colloque Francophone de Traitement du Signal et des Images, Aug 2023, Grenoble, France. &#x27E8;hal-04399108&#x27E9;",
+      "title_s": [
+        "Imagerie radio-interférométrique robuste par dépliement neuronal"
+      ],
+      "abstract_s": [
+        "Les algorithmes d'imagerie radio-interférométrique sont particulièrement sensibles aux bruits non gaussiens affectant les mesures. De telles perturbations, notamment dues à la présence d'interférences de radiofréquences, peuvent être modélisées par des distributions gaussiennes composées. Cette modélisation conduit à la formulation d'un problème d'estimation du maximum de vraisemblance pour la tâche de reconstruction d'image. Cependant, le choix de la distribution et de ses hyperparamètres peut avoir un impact significatif sur l'erreur de reconstruction. Dans cet article, nous généralisons l'algorithme d'espérance-maximisation pour l'imagerie radio-interférométrique récemment introduit par les auteurs à une modélisation du bruit additif par des distributions gaussiennes composées. Ensuite, nous proposons de déplier l'algorithme précédemment introduit, donnant lieu à un algorithme d'apprentissage profond déroulée pour lequel la robustesse au bruit hétérogène est pilotée de manière informée par la base d'apprentissage. Enfin, nous illustrons les performances du réseau proposé sur des données simulées."
+      ],
+      "conferenceTitle_s": "GRETSI 2023. XXIXème Colloque Francophone de Traitement du Signal et des Images",
+      "authFullName_s": [
+        "Yassine Mhiri",
+        "Mohammed Nabil EL KORSO",
+        "Arnaud Breloy",
+        "Pascal Larzabal"
+      ],
+      "halId_s": "hal-04399108",
+      "uri_s": "https://hal.science/hal-04399108v1",
+      "docType_s": "COMM",
+      "publicationDateY_i": 2023,
+      "fileMain_s": "https://hal.science/hal-04399108/document"
+    },
+    {
+      "docid": "4297295",
+      "label_s": "Yassine Mhiri. Contributions aux méthodes de calibration et d'imagerie pour les radio-interféromètres en présence d'interférences. Traitement du signal et de l'image [eess.SP]. Université Paris-Saclay, 2023. Français. &#x27E8;NNT : 2023UPAST111&#x27E9;. &#x27E8;tel-04297295&#x27E9;",
+      "title_s": [
+        "Contributions aux méthodes de calibration et d'imagerie pour les radio-interféromètres en présence d'interférences",
+        "Contributions to Calibration and Imaging Methods for Radio Interferometers in the Presence of Interferences."
+      ],
+      "abstract_s": [
+        "Les radiotélescopes interféromètres permettent de reconstruire des images des émissions radio provenant de sources célestes. Ces images sont d'un grand intérêt pour les radioastronomes et les astrophysiciens car elles permettent d'obtenir des informations sur les phénomènes physiques en place dans l'univers. Pour cela, une première étape de calibration est nécessaire pour estimer et corriger les effets perturbateurs notamment liés à l'instrument et à la propagation du signal d'intérêt dans l'atmosphère. Des algorithmes d'imageries sont ensuite mis en œuvre pour reconstruire une image du ciel. Toutefois, la conjonction de l'utilisation croissante de radiofréquences dans de nombreuses activités humaines et la forte sensibilité des antennes rendent nécessaire le développement de traitements robustes à la présence d'interférences (RFI). Plusieurs méthodes permettent de détecter et filtrer ces signaux interférents. Néanmoins, les sources d'interférences de faible et moyenne puissance restent difficiles à détecter avec de telles méthodes. Le but de ce travail est alors de proposer des algorithmes de traitement du signal pour la radioastronomie qui soit robustes à la présence de sources interférentes dans les données. Ce travail sera conduit avec un souci constant de performance statistique et d'efficacité computationnelle en grandes dimensions. Tout d'abord, dans le contexte de la calibration, nous montrons que les interférences peuvent être modélisées par un bruit de rang faible. Cette modélisation nous a permis de développer un algorithme original de calibration multifréquentiel basé sur une variante de l'algorithme Espérance-Maximisation. Grâce à un choix judicieux des données latentes, nous avons obtenu des expressions analytiques à chaque itération permettant de limiter la charge de calcul requise. Les simulations effectuées ont montré la supériorité en précision des solutions proposées par rapport à l'état de l'art en présences de RFI. Nous proposons ensuite des modélisations statistiques des données permettant de prendre en compte l'impact de sources interférentes dans le contexte de l'imagerie. Nous nous appuyons sur la classe des distributions gaussiennes composées. Nous avons ainsi pu proposer un algorithme du maximum de vraisemblance régularisé (type EM) en présence d'interférences. Toutefois, tous les algorithmes proposés pour résoudre l'étape de maximisation de l'EM font appel à une DFT dont la charge de calcul est liée à la coûteuse implémentation d'une DFT sur un vecteur de visibilités de grandes dimensions. Afin d'accélérer cette étape par l'usage d'une FFT, nous avons du introduire un bruit synthétique pour prendre en compte l'approximation d'une DFT sur une grille non uniforme par une FFT. C'est ainsi que nous avons été amenés à développer un jeu original de variables latentes permettant d'en améliorer l'efficacité computationnelle. Comme attendu, les algorithmes d'imagerie ainsi proposés permettent une reconstruction améliorée par rapport aux algorithmes de l'état de l'art en présence de RFI avec une charge de calcul contrôlé.",
+        "Radio-interferometers enable the reconstruction of images of radio emissions originating from celestial sources. These images are of great interest to radio astronomers and astrophysicists as they provide information about the underlying physical phenomena in the universe. To achieve this, an initial calibration step is necessary to estimate and correct pertubating effects, particularly those related to the instrument and the propagation of the signal of interest through the atmosphere. Subsequently, imaging algorithms are implemented to reconstruct a sky image. However, the combination of the increasing use of radio frequencies in various human activities and the high sensitivity of the antennas requires the development of robust treatments to address the presence of radio frequency interference (RFI). Several methods exist to detect and filter these interfering signals. Nevertheless, detecting low and moderate power interference sources remains challenging using such methods. The objective of this research is to propose signal processing algorithms for radio astronomy that are resilient to the presence of interfering sources in the data. This work will be conducted with a constant focus on statistical performance and computational efficiency in high-dimensional settings.Firstly, in the context of calibration, we demonstrate that interferences can be modeled as a low-rank noise. This modeling approach has allowed us to develop an innovative multifrequency calibration algorithm based on a variant of the Expectation-Maximization (EM) algorithm. By carefully selecting a latent data space, we obtained analytical expressions at each iteration to limit the required computational burden. The performed simulations have shown the superior precision of the proposed solutions compared to the state-of-the-art methods in the presence of RFI. Subsequently, we propose a statistical data model that accounts for the impact of interfering sources in the imaging context. To do so, we rely on the class of compound Gaussian distributions. Thus, we have been able to propose a regularized maximum likelihood algorithm (EM like) in the presence of interference. However, all the proposed algorithms for solving the maximization step of the EM algorithm involve a Discrete Fourier Transform (DFT), the computational load of which is linked to the expensive implementation of a DFT on a high-dimensional visibility vector. To accelerate this step by employing a Fast Fourier Transform (FFT), we introduced a synthetic noise to account for the approximation of a non-uniform grid DFT by an FFT. This led us to develop an original set of latent variables to improve its computational efficiency. As expected, the proposed imaging algorithms allow for improved reconstruction compared to state-of-the-art algorithms in the presence of RFI, while maintaining controlled computational complexity."
+      ],
+      "authFullName_s": [
+        "Yassine Mhiri"
+      ],
+      "halId_s": "tel-04297295",
+      "uri_s": "https://theses.hal.science/tel-04297295v1",
+      "docType_s": "THESE",
+      "doiId_s": "10.70675/0372b9a1z4645z4eefz9f3dz361624588e4c",
+      "publicationDateY_i": 2023,
+      "fileMain_s": "https://theses.hal.science/tel-04297295/document"
+    },
+    {
+      "docid": "3823295",
+      "label_s": "Yassine Mhiri, Mohammed Nabil El Korso, Arnaud Breloy, Pascal Larzabal. A Robust EM Algorithm for Radio Interferometric Imaging in The Presence of Outliers. SiPS22-IEEE Workshop on Signal Processing Systems, Nov 2022, Rennes, France. pp.1-5, &#x27E8;10.1109/SiPS55645.2022.9919255&#x27E9;. &#x27E8;hal-03823295&#x27E9;",
+      "title_s": [
+        "A Robust EM Algorithm for Radio Interferometric Imaging in The Presence of Outliers"
+      ],
+      "abstract_s": [
+        "Image synthesis in the context of radio interferometric data can be expressed as a signal reconstruction from incomplete Fourier measurements. Most imaging techniques for radio interferometry lie in minimizing the least square error between the reconstructed image and the observed data assuming an additive white gaussian noise. In this paper, we derive an expectation-maximization based imaging algorithm that handles the presence of outliers in the observed data. Subsequently, we propose a new generic image synthesis algorithm based on the expectation-maximization algorithm, leading to a computationally efficient method."
+      ],
+      "conferenceTitle_s": "SiPS22-IEEE Workshop on Signal Processing Systems",
+      "authFullName_s": [
+        "Yassine Mhiri",
+        "Mohammed Nabil El Korso",
+        "Arnaud Breloy",
+        "Pascal Larzabal"
+      ],
+      "halId_s": "hal-03823295",
+      "uri_s": "https://hal.science/hal-03823295v1",
+      "docType_s": "COMM",
+      "page_s": "1-5",
+      "publisher_s": [
+        "IEEE"
+      ],
+      "doiId_s": "10.1109/SiPS55645.2022.9919255",
+      "publicationDateY_i": 2022,
+      "fileMain_s": "https://hal.science/hal-03823295/document"
+    },
+    {
+      "docid": "3775526",
+      "label_s": "Yassine Mhiri, Mohammed-Nabil El Korso, Arnaud Breloy, Pascal Larzabal. Algorithme SAGE pour la calibration robuste de radio-interféromètres en présence d'interférences. XXVIIIème Colloque Francophone de Traitement du Signal et des Images, GRETSI'22, Sep 2022, Nancy, France. &#x27E8;hal-03775526&#x27E9;",
+      "title_s": [
+        "Algorithme SAGE pour la calibration robuste de radio-interféromètres en présence d'interférences"
+      ],
+      "abstract_s": [
+        "Les radio-interféromètres sont des réseaux phasés produisant des images à haute résolution à partir de la matrice de covariance des mesures. L'étalonnage de tels instruments est nécessaire et constitue une tâche critique. Toutefois, les radio-interféromètres modernes représentent un nouveau défi pour la radioastronomie car ils sont plus sensibles aux interférences de radiofréquence (RFI). En effet, la présence de RFI dans le processus de calibration induit des biais dans l'estimation des erreurs instrumentales. L'objectif de cet article est de proposer une alternative pour atténuer les effets des RFI. Pour cela, nous proposons d'abord un modèle permettant de prendre en compte la présence de RFI dans les données sur plusieurs canaux de fréquences grâce à un modèle de rang faible. Nous réalisons ensuite une estimation par maximum de vraisemblance des paramètres de calibration avec un algorithme d'Espérance Maximisation Généralisée sur Espaces Alternés (SAGE). Pour cet algorithme, nous dérivons deux ensembles originaux de données complètes, pour lesquels nous obtenons des solutions explicites. Des simulations numériques montrent un gain en performance significatif sur des données corrompues par des RFI comparé aux méthodes de l'état de l'art."
+      ],
+      "conferenceTitle_s": "XXVIIIème Colloque Francophone de Traitement du Signal et des Images, GRETSI'22",
+      "authFullName_s": [
+        "Yassine Mhiri",
+        "Mohammed-Nabil El Korso",
+        "Arnaud Breloy",
+        "Pascal Larzabal"
+      ],
+      "halId_s": "hal-03775526",
+      "uri_s": "https://hal.science/hal-03775526v1",
+      "docType_s": "COMM",
+      "publicationDateY_i": 2022,
+      "fileMain_s": "https://hal.science/hal-03775526/document"
+    },
+    {
+      "docid": "3953256",
+      "label_s": "Yassine Mhiri, Mohammed Nabil El Korso, Arnaud Breloy, Pascal Larzabal. Multifrequency array calibration in presence of radio frequency interferences. Signal Processing, 2022, 199, pp.108613. &#x27E8;10.1016/j.sigpro.2022.108613&#x27E9;. &#x27E8;hal-03953256&#x27E9;",
+      "title_s": [
+        "Multifrequency array calibration in presence of radio frequency interferences"
+      ],
+      "abstract_s": [
+        "Radio interferometers are phased arrays producing high-resolution images from the covariance matrix of measurements. Calibration of such instruments is necessary and is a critical task. This is how the estimation of instrumental errors is usually done thanks to the knowledge of referenced celestial sources. However, the use of high sensitive antennas in modern radio interferometers (LOFAR, SKA) brings a new challenge in radio astronomy because they are more sensitive to Radio Frequency Interferences (RFI). The presence of RFI during the calibration process generally induces biases in state-of-the-art solutions. The purpose of this paper is to propose an alternative to alleviate the effects of RFI. For that, we first propose a model to take into account the presence of RFI in the data across multiple frequency channels thanks to a low-rank structured noise. We then achieve maximum likelihood estimation of the calibration parameters with a Space Alternating Generalized Expectation-Maximization (SAGE) algorithm for which we derive originally two sets of complete data allowing closed-form expressions for the updates. Numerical simulations show a significant gain in performance for RFI corrupted data in comparison with some more classical methods."
+      ],
+      "journalTitle_s": "Signal Processing",
+      "authFullName_s": [
+        "Yassine Mhiri",
+        "Mohammed Nabil El Korso",
+        "Arnaud Breloy",
+        "Pascal Larzabal"
+      ],
+      "halId_s": "hal-03953256",
+      "uri_s": "https://hal.science/hal-03953256v1",
+      "docType_s": "ART",
+      "page_s": "108613",
+      "volume_s": "199",
+      "doiId_s": "10.1016/j.sigpro.2022.108613",
+      "publicationDateY_i": 2022,
+      "fileMain_s": "https://hal.science/hal-03953256/document"
+    },
+    {
+      "docid": "3156738",
+      "label_s": "Yassine Mhiri, Mohammed Nabil El Korso, Lucien Bacharach, Arnaud Breloy, Pascal Larzabal. Expectation-Maximization Based Direction of Arrival Estimation Under a Mixture of Noise. EUSIPCO, Aug 2021, Dublin ( virtual ), Ireland. &#x27E8;10.23919/EUSIPCO54536.2021.9615971&#x27E9;. &#x27E8;hal-03156738&#x27E9;",
+      "title_s": [
+        "Expectation-Maximization Based Direction of Arrival Estimation Under a Mixture of Noise"
+      ],
+      "abstract_s": [
+        "In this paper, we propose a novel scheme for direction of arrival estimation in the presence of a noise which is a combination of white Gaussian distributed noise and spherically invariant random distributed noise. Such combination arises in practical scenario, in which, the Gaussian component represents the thermal noise (i.e., the internal noise), whereas, the spherically invariant random process represents the possible presence of outliers and/or non-homogeneities of the environment (i.e., interference, clutter, jammers). The classical direction of arrival estimation using the maximum likelihood is computationally intractable. In order to overcome this drawback while maintaining a fine accuracy and taking into account the presence of the two noise components, we design an expectation-maximization algorithm. Finally, numerical simulations show that the proposed algorithm outperforms the state-of-the-art."
+      ],
+      "conferenceTitle_s": "EUSIPCO",
+      "authFullName_s": [
+        "Yassine Mhiri",
+        "Mohammed Nabil El Korso",
+        "Lucien Bacharach",
+        "Arnaud Breloy",
+        "Pascal Larzabal"
+      ],
+      "halId_s": "hal-03156738",
+      "uri_s": "https://hal.science/hal-03156738v1",
+      "docType_s": "COMM",
+      "doiId_s": "10.23919/EUSIPCO54536.2021.9615971",
+      "publicationDateY_i": 2021,
+      "fileMain_s": "https://hal.science/hal-03156738/document"
+    }
+  ]
+}

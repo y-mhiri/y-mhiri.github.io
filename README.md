@@ -1,31 +1,82 @@
-A Github Pages template for academic websites. This was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.
+# Yassine Mhiri — personal page (V2)
 
-I think I've got things running smoothly and fixed some major bugs, but feel free to file issues or make pull requests if you want to improve the generic template / theme.
+Static site built with [Astro](https://astro.build). Publications are
+synchronized automatically from [HAL](https://cv.archives-ouvertes.fr/yassine-mhiri).
 
-### Note: if you are using this repo and now get a notification about a security vulnerability, delete the Gemfile.lock file. 
+## How to do the everyday things
 
-# Instructions
+| Task | What to do |
+|---|---|
+| Update name, photo, address, profile links | Edit `config.yaml` (`profile`, `links`) |
+| Update bio, career, supervision | Edit the file in `src/content/home/` (`bio.md`, `career.md`, `supervision.md`) |
+| Show / hide / reorder a homepage section | Edit `home.sections` in `config.yaml` (comment a line to hide it). `news` and `service` are ready but commented out |
+| Add a news item or service | Add a line at the top of `src/content/home/news.md` (or `service.md`) |
+| Add a talk, outreach event, workshop | Add an entry at the top of the right group in `src/content/pages/talks.md` |
+| Number of recent publications on the homepage | `home.recent_publications` in `config.yaml` |
+| Teaching | Edit `src/content/pages/teaching.md`; course files go in `public/files/teaching/` |
+| New publication | Deposit on HAL — nothing else to do. The build fetches HAL |
+| Publication wrong / missing on HAL | Edit `src/data/publications-overrides.yaml` |
+| New job offer (internship, PhD, postdoc) | Drop a `.md` file in `src/content/positions/` |
+| Offer filled | Set `status: filled` in its frontmatter |
+| New page | Drop a `.md` file in `src/content/pages/` — it gets a page and a nav entry automatically |
+| Moved or deleted a page whose link was shared | Add a line to `redirects` in `astro.config.mjs` |
+| Turn dark mode off | `dark_mode.enabled: false` in `config.yaml` |
+| Anything visual | Edit `src/styles/global.css` (colors are CSS variables at the top) |
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+Every content file is plain Markdown with a small YAML frontmatter block at the
+top — copy an existing file to get a new one.
 
-See more info at https://academicpages.github.io/
+## Running locally
 
-## To run locally (not on GitHub Pages, to serve on your own computer)
+```bash
+npm install
+npm run dev        # dev server at http://localhost:4321
+npm run build      # production build into dist/
+npm run test:filter  # builds then functionally tests the publications filter
+```
 
-1. Clone the repository and made updates as detailed above
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle clean` to clean up the directory (no need to run `--force`)
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `bundle exec jekyll liveserve` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+The publications page has a client-side filter bar (text search, one checkbox
+per category, sort by year/title/author). It is plain JS loading only on that
+page; `npm run test:filter` verifies it against the built page in a headless
+DOM.
 
-# Changelog -- bugfixes and enhancements
+`npm run dev` and `npm run build` re-fetch publications from HAL first. If HAL
+is unreachable, the build falls back to the committed cache
+(`src/data/hal-cache.json`) and prints a warning. To refresh the cache
+manually: `npm run update:hal` (then commit the updated file).
 
-There is one logistical issue with a ready-to-fork template theme like academic pages that makes it a little tricky to get bug fixes and updates to the core theme. If you fork this repository, customize it, then pull again, you'll probably get merge conflicts. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch. 
+## Anatomy
 
-To support this, all changes to the underlying code appear as a closed issue with the tag 'code change' -- get the list [here](https://github.com/academicpages/academicpages.github.io/issues?q=is%3Aclosed%20is%3Aissue%20label%3A%22code%20change%22%20). Each issue thread includes a comment linking to the single commit or a diff across multiple commits, so those with forked repositories can easily identify what they need to patch.
+```
+config.yaml                        ← you: name, address, links, homepage sections, nav, HAL query
+src/content/home/*.md              ← you: homepage sections (bio, career, supervision, news...)
+src/content/pages/*.md             ← you: other pages (teaching.md)
+src/content/positions/*.md         ← you: job offers
+src/data/publications-overrides.yaml← you: HAL fixes (exclude / patch / add)
+src/data/hal-cache.json            ← auto: HAL snapshot used as build fallback
+src/lib/                           ← plumbing (config, HAL -> publications, BibTeX)
+src/pages/                         ← routes: /, /publications/, /positions/, /<page>/
+src/layouts/Base.astro             ← masthead, nav, footer, dark-mode toggle
+src/styles/global.css              ← all styling (CSS variables, dark theme at the bottom)
+deploy.yml                         ← GitHub Actions workflow (see "Going live")
+```
+
+## Going live (replacing the Jekyll site)
+
+1. Copy the V2 files to the root of the `y-mhiri.github.io` repository
+   (everything in this folder except `node_modules/`, `dist/`, `.astro/`).
+2. Move `deploy.yml` to `.github/workflows/deploy.yml`.
+3. Repository settings: Settings > Pages > Source = **GitHub Actions**.
+4. Push to `main`. Done — every push rebuilds the site, including a fresh
+   HAL fetch.
+
+Old URLs are redirected: `/about/` and `/cv/` (see `redirects` in
+`astro.config.mjs`) and the two offers `/stages/*.html` (small files in
+`public/stages/`). The old PDFs in `/stages/` are not carried over.
+
+## Adding concept-demo pages (future)
+
+If you later want JS animations to teach concepts: put the explanation in a
+new markdown file under `src/content/pages/` and add a `<script>` in a small
+Astro page (or a component used by it). Astro bundles scripts per page, so a
+demo on one page adds no JS to any other page.

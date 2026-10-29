@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import { config } from '../lib/config';
+---
+
+<Base title={`Page not found — ${config.profile.name}`}>
+  <article>
+    <h1>404</h1>
+    <p>The page you are looking for does not exist (or has moved).</p>
+    <p><a href="/">Back to the homepage</a>.</p>
+  </article>
+</Base>

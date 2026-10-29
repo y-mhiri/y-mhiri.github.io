@@ -1,0 +1,50 @@
+# =========================================================================
+# Publication overrides
+#
+# Publications are fetched automatically from HAL at build time. Use this
+# file only to fix what HAL gets wrong or to cover gaps:
+#
+#   exclude : list of HAL ids (e.g. "hal-04465053") to hide from the site
+#   patch   : per HAL id, override any field (docType_s, journalTitle_s...)
+#   add     : publications missing from HAL, in the same shape as HAL docs
+#
+# Category mapping (docType_s -> section):
+#   ART -> Journal articles | COMM -> International conferences
+#   UNDEFINED -> Preprints  | THESE -> Thesis | anything else -> Other
+# =========================================================================
+
+exclude: []
+#  - hal-XXXXXXXX
+
+# GRETSI papers are deposited on HAL as COMM (conference). Reclassify them
+# into the "National conferences" section:
+patch:
+  hal-04399112:
+    docType_s: NATCOMM
+  hal-04399108:
+    docType_s: NATCOMM
+  hal-03775526:
+    docType_s: NATCOMM
+
+# Africanus III is not deposited under Yassine Mhiri's name on HAL:
+add:
+  - halId_s: hal-bester2024astronomy
+    title_s:
+      - Africanus III. pfb-imaging -- a flexible radio interferometric imaging suite
+    authFullName_s:
+      - Hertzog L. Bester
+      - Jonathan S. Kenyon
+      - Audrey Repetti
+      - Simon J. Perkins
+      - Oleg M. Smirnov
+      - Tariq Blecher
+      - Yassine Mhiri
+      - Jakob Roth
+      - Ian Heywood
+      - Yves Wiaux
+      - Benjamin V. Hugo
+    docType_s: ART
+    journalTitle_s: Astronomy and Computing
+    publisher_s: Elsevier
+    publicationDateY_i: 2025
+    uri_s: https://arxiv.org/abs/2412.10073

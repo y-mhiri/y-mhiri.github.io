@@ -1,0 +1,77 @@
+# =========================================================================
+# Site configuration - edit this file to update your personal information.
+# After changing it, rebuild the site (or just push: GitHub rebuilds it).
+# =========================================================================
+
+site:
+  title: Yassine Mhiri
+  description: >-
+    Personal page of Yassine Mhiri, associate professor at LISTIC,
+    Université Savoie Mont Blanc. Statistical signal and image processing,
+    computational imaging, inverse problems.
+
+profile:
+  name: Yassine Mhiri
+  photo: /images/photo.jpg
+  role: Associate professor
+  affiliation: LISTIC, Université Savoie Mont Blanc
+  # Postal address shown on the homepage, one line per item. Leave empty to hide.
+  address: []
+  #  - LISTIC, Polytech Annecy-Chambéry
+  #  - Office ...
+  #  - street
+  #  - 74940 Annecy, France
+
+# Academic profiles, shown on the homepage under the address.
+links:
+  - label: Mail
+    url: mailto:yassine.mhiri@univ-smb.fr
+  - label: Google Scholar
+    url: https://scholar.google.com/citations?user=k4HG5UEAAAAJ
+  - label: HAL
+    url: https://cv.archives-ouvertes.fr/yassine-mhiri
+  - label: ORCID
+    url: https://orcid.org/0000-0002-8435-7976
+  - label: GitHub
+    url: https://github.com/y-mhiri
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/yassine-mhiri-701177109
+
+# Homepage sections, top to bottom. Comment a line to hide a section.
+#   publications, positions : automatic (latest HAL entries, open offers)
+#   any other name          : the file src/content/home/<name>.md
+home:
+  recent_publications: 5
+  sections:
+    - bio
+    # - news
+    - publications
+    - positions
+    - supervision
+    - career
+    # - service
+
+# Main navigation (the name in the header links to the homepage).
+# Every markdown file in src/content/pages also gets an entry automatically,
+# unless its frontmatter sets `nav: false`.
+navigation:
+  - title: Publications
+    url: /publications/
+  - title: Teaching
+    url: /teaching/
+  - title: Talks & events
+    url: /talks/
+  - title: Open positions
+    url: /positions/
+
+# HAL configuration. Publications are fetched at build time from the HAL
+# search API. The full-name query catches deposits made by co-authors that
+# are not linked to your HAL account (authIdHal_s alone finds only a subset).
+hal:
+  id: yassine-mhiri
+  query: 'authFullName_t:"Yassine Mhiri"'
+
+# Dark mode: follows the visitor's OS preference, plus a manual toggle
+# button in the header (persisted per visitor). false = light only.
+dark_mode:
+  enabled: true

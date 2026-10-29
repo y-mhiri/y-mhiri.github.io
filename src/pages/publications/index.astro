@@ -1,0 +1,198 @@
+---
+import Base from '../../layouts/Base.astro';
+import PubItem from '../../components/PubItem.astro';
+import { getGroupedPublications } from '../../lib/publications';
+import { config } from '../../lib/config';
+
+const groups = getGroupedPublications();
+const count = groups.reduce((n, g) => n + g.publications.length, 0);
+---
+
+<Base title={`Publications — ${config.profile.name}`}>
+  <article>
+    <h1>Publications</h1>
+    <p>
+      Automatically synchronized from my
+      <a href={`https://cv.archives-ouvertes.fr/${config.hal.id}`}>HAL</a> profile
+      (<span id="pub-total">{count}</span> documents).
+    </p>
+
+    <form class="filter-bar" role="search" onsubmit="return false;">
+      <input
+        id="pub-search"
+        class="filter-bar__search"
+        type="search"
+        placeholder="Search title or author…"
+        aria-label="Search publications by title or author"
+        autocomplete="off"
+      />
+
+      <fieldset class="filter-bar__categories">
+        <legend class="sr-only">Filter by type</legend>
+        {
+          groups.map((g) => (
+            <label class="filter-bar__checkbox">
+              <input type="checkbox" name="category" value={g.category} checked />
+              {g.category} <span class="filter-bar__count">({g.publications.length})</span>
+            </label>
+          ))
+        }
+      </fieldset>
+
+      <label class="filter-bar__sort">
+        Sort by
+        <select id="pub-sort">
+          <option value="year-desc" selected>Year (newest first)</option>
+          <option value="year-asc">Year (oldest first)</option>
+          <option value="title">Title (A–Z)</option>
+          <option value="authors">First author (A–Z)</option>
+        </select>
+      </label>
+    </form>
+
+    <p class="filter-bar__status" id="pub-count" aria-live="polite"></p>
+
+    <div id="pub-groups">
+      {
+        groups.map((group) => (
+          <section data-category={group.category}>
+            <h2 class="pub-group-title">{group.category}</h2>
+            <ul class="pub-list">
+              {group.publications.map((pub) => (
+                <PubItem pub={pub} category={group.category} />
+              ))}
+            </ul>
+          </section>
+        ))
+      }
+    </div>
+
+    <p class="filter-bar__empty" id="pub-empty" hidden>
+      No publication matches your search or filters.
+    </p>
+  </article>
+</Base>
+
+<script>
+  const search = document.getElementById('pub-search') as HTMLInputElement;
+  const sortSelect = document.getElementById('pub-sort') as HTMLSelectElement;
+  const checkboxes = Array.from(
+    document.querySelectorAll<HTMLInputElement>('input[name="category"]'),
+  );
+  const sections = Array.from(document.querySelectorAll<HTMLElement>('#pub-groups > section'));
+  const countEl = document.getElementById('pub-count')!;
+  const emptyEl = document.getElementById('pub-empty')!;
+
+  const collator = new Intl.Collator('en', { sensitivity: 'base' });
+  const total = sections.reduce(
+    (n, s) => n + (s.querySelector('.pub-list')?.children.length ?? 0),
+    0,
+  );
+
+  function matches(item: HTMLElement, query: string): boolean {
+    if (!query) return true;
+    return (
+      (item.dataset.title ?? '').includes(query) ||
+      (item.dataset.authors ?? '').includes(query)
+    );
+  }
+
+  // Wrap search matches in <mark> inside the title and author list.
+  // The original markup is cached so each search starts from a clean state.
+  const originalHtml = new Map<Element, string>();
+
+  function highlight(item: HTMLElement, query: string) {
+    for (const el of item.querySelectorAll('.pub-title a, .pub-authors')) {
+      if (!originalHtml.has(el)) originalHtml.set(el, el.innerHTML);
+      el.innerHTML = originalHtml.get(el)!;
+      if (!query) continue;
+
+      const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+      const textNodes: Text[] = [];
+      while (walker.nextNode()) textNodes.push(walker.currentNode as Text);
+
+      for (const node of textNodes) {
+        const text = node.data;
+        const lower = text.toLowerCase();
+        let from = 0;
+        let at = lower.indexOf(query);
+        if (at === -1) continue;
+
+        const frag = document.createDocumentFragment();
+        while (at !== -1) {
+          frag.append(text.slice(from, at));
+          const mark = document.createElement('mark');
+          mark.textContent = text.slice(at, at + query.length);
+          frag.append(mark);
+          from = at + query.length;
+          at = lower.indexOf(query, from);
+        }
+        frag.append(text.slice(from));
+        node.replaceWith(frag);
+      }
+    }
+  }
+
+  function apply() {
+    const query = search.value.trim().toLowerCase();
+    const active = new Set(
+      checkboxes.filter((c) => c.checked).map((c) => c.value),
+    );
+
+    let visible = 0;
+    for (const section of sections) {
+      const category = section.dataset.category ?? '';
+      if (!active.has(category)) {
+        section.hidden = true;
+        continue;
+      }
+
+      const list = section.querySelector('.pub-list')!;
+      const items = Array.from(list.children) as HTMLElement[];
+
+      let sectionVisible = 0;
+      for (const item of items) {
+        const show = matches(item, query);
+        item.hidden = !show;
+        if (show) {
+          sectionVisible++;
+          highlight(item, query);
+        }
+      }
+      visible += sectionVisible;
+
+      section.hidden = sectionVisible === 0;
+      if (!section.hidden) sortList(list, items);
+    }
+
+    emptyEl.hidden = visible > 0;
+    const untouched = visible === total && !query;
+    countEl.textContent = untouched ? '' : `${visible} of ${total} shown`;
+  }
+
+  function sortList(list: Element, items: HTMLElement[]) {
+    const mode = sortSelect.value;
+    const key = (el: HTMLElement) => el.dataset;
+    const sorted = [...items].sort((a, b) => {
+      switch (mode) {
+        case 'year-asc':
+          return Number(key(a).year) - Number(key(b).year);
+        case 'title':
+          return collator.compare(key(a).title ?? '', key(b).title ?? '');
+        case 'authors':
+          return collator.compare(
+            (key(a).authors ?? '').split(',')[0],
+            (key(b).authors ?? '').split(',')[0],
+          );
+        default:
+          return Number(key(b).year) - Number(key(a).year);
+      }
+    });
+    sorted.forEach((el) => list.appendChild(el));
+  }
+
+  search.addEventListener('input', apply);
+  sortSelect.addEventListener('change', apply);
+  checkboxes.forEach((c) => c.addEventListener('change', apply));
+  apply();
+</script>
